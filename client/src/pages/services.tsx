@@ -80,8 +80,8 @@ export default function Services() {
                 onClick={() => setActiveCategory(category.id)}
                 className={`transition-colors duration-300 ${
                   activeCategory === category.id
-                    ? "bg-luxury-gold text-white hover:bg-yellow-600"
-                    : "bg-white text-luxury-navy hover:bg-gray-100"
+                    ? "bg-luxury-gold text-white hover:bg-rose-gold"
+                    : "bg-white text-luxury-navy hover:bg-soft-pink"
                 }`}
               >
                 {category.label}
