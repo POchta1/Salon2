@@ -26,7 +26,7 @@ export default function Hero() {
           <Link href="/services">
             <Button 
               size="lg" 
-              className="bg-luxury-gold text-white hover:bg-rose-gold transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4"
+              className="bg-luxury-gold text-white hover:bg-yellow-600 transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4"
             >
               Arbeitsplätze Entdecken
             </Button>
