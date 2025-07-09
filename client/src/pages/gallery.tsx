@@ -5,45 +5,66 @@ import { Button } from "@/components/ui/button";
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    src: "https://static.wixstatic.com/media/bff472_ff8f129561dc493584d1a8a75e899ae1f000.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/bff472_ff8f129561dc493584d1a8a75e899ae1f000.jpg",
     title: "Hauptarbeitsbereich",
     description: "Wien 1040",
     category: "salon"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    src: "https://static.wixstatic.com/media/28e931_d2c3cd0515214224a89ddaba6590f07f~mv2.webp/v1/fill/w_800,h_600,al_c,q_85,usm_1.20_1.00_0.01,enc_avif,quality_auto/28e931_d2c3cd0515214224a89ddaba6590f07f~mv2.webp",
+    title: "Nageldesign Studio",
+    description: "Professionelle Nagelbehandlung",
+    category: "nails"
+  },
+  {
+    id: 3,
+    src: "https://static.wixstatic.com/media/ccce64db8e8d4d4386cd4b72c5b0b2aa.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_1.20_1.00_0.01,enc_avif,quality_auto/ccce64db8e8d4d4386cd4b72c5b0b2aa.jpg",
     title: "Makeup Station",
     description: "Professionelle Ausstattung",
     category: "makeup"
   },
   {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    title: "Spa Behandlungsraum",
-    description: "Entspannung & Wellness",
-    category: "spa"
-  },
-  {
     id: 4,
-    src: "https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    title: "Friseur Arbeitsplatz",
-    description: "Moderne Ausstattung",
-    category: "hair"
+    src: "https://static.wixstatic.com/media/bff472_c0ae38d2b6cc43bbbdc6351d5c2fc92e~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bff472_c0ae38d2b6cc43bbbdc6351d5c2fc92e~mv2.jpg",
+    title: "Coworking Beauty Space",
+    description: "Inspirierendes Arbeitsumfeld",
+    category: "salon"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    title: "Nageldesign Studio",
-    description: "UV-Lampe & Absaugung",
+    src: "https://static.wixstatic.com/media/bff472_0d02109a9bde451180500342011e61f7~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bff472_0d02109a9bde451180500342011e61f7~mv2.jpg",
+    title: "Maniküre & Pediküre Zone",
+    description: "Wien 1040",
     category: "nails"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    title: "Beauty Equipment",
-    description: "Professionelle Geräte",
-    category: "equipment"
+    src: "https://static.wixstatic.com/media/28e931_dde8e2d9b5474d5f9f0ffcdc80d2f582~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/28e931_dde8e2d9b5474d5f9f0ffcdc80d2f582~mv2.jpg",
+    title: "Makeup Arbeitsplatz",
+    description: "Perfekte Beleuchtung",
+    category: "makeup"
+  },
+  {
+    id: 7,
+    src: "https://static.wixstatic.com/media/28e931_02719cb1bbd14d59bb811c036a900a36~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/28e931_02719cb1bbd14d59bb811c036a900a36~mv2.jpg",
+    title: "Kosmetikraum Wien 1120",
+    description: "Moderne Ausstattung",
+    category: "spa"
+  },
+  {
+    id: 8,
+    src: "https://static.wixstatic.com/media/bff472_36467ff8eff449b0a4cc25dce652055c~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bff472_36467ff8eff449b0a4cc25dce652055c~mv2.jpg",
+    title: "Friseur Arbeitsplatz",
+    description: "Professionelle Ausstattung",
+    category: "hair"
+  },
+  {
+    id: 9,
+    src: "https://static.wixstatic.com/media/bff472_2ea28c9ea1fd443ba110112912b9a6ac~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bff472_2ea28c9ea1fd443ba110112912b9a6ac~mv2.jpg",
+    title: "Kosmetik Raum Nr. 1",
+    description: "Wien 1070",
+    category: "spa"
   }
 ];
 
@@ -51,10 +72,9 @@ const filterCategories = [
   { id: "all", label: "Alle Bilder" },
   { id: "salon", label: "Salon" },
   { id: "makeup", label: "Makeup" },
-  { id: "spa", label: "Spa" },
+  { id: "spa", label: "Kosmetik" },
   { id: "hair", label: "Friseur" },
-  { id: "nails", label: "Nails" },
-  { id: "equipment", label: "Equipment" }
+  { id: "nails", label: "Nageldesign" }
 ];
 
 export default function Gallery() {
@@ -86,8 +106,8 @@ export default function Gallery() {
               onClick={() => setActiveFilter(category.id)}
               className={`transition-colors duration-300 ${
                 activeFilter === category.id
-                  ? "bg-luxury-gold text-white hover:bg-yellow-600"
-                  : "bg-white text-luxury-navy hover:bg-gray-100"
+                  ? "bg-luxury-gold text-white hover:bg-rose-gold"
+                  : "bg-white text-luxury-navy hover:bg-soft-pink"
               }`}
             >
               {category.label}

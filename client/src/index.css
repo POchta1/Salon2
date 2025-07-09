@@ -13,21 +13,24 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(240, 21%, 15%);
+  --primary: hsl(340, 30%, 25%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(60, 4.8%, 95.9%);
-  --secondary-foreground: hsl(24, 9.8%, 10%);
-  --accent: hsl(60, 4.8%, 95.9%);
-  --accent-foreground: hsl(24, 9.8%, 10%);
+  --secondary: hsl(320, 25%, 97%);
+  --secondary-foreground: hsl(340, 30%, 25%);
+  --accent: hsl(320, 25%, 97%);
+  --accent-foreground: hsl(340, 30%, 25%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Beauty Space Custom Colors */
-  --luxury-navy: hsl(240, 21%, 15%);
-  --luxury-gold: hsl(45, 78%, 58%);
-  --luxury-gray: hsl(210, 20%, 98%);
+  /* Beauty Space Custom Colors - Soft Feminine Theme */
+  --luxury-navy: hsl(340, 30%, 25%);
+  --luxury-gold: hsl(320, 60%, 75%);
+  --luxury-gray: hsl(320, 25%, 97%);
+  --soft-pink: hsl(340, 50%, 85%);
+  --rose-gold: hsl(15, 50%, 70%);
+  --cream: hsl(45, 40%, 95%);
 }
 
 .dark {
@@ -41,8 +44,8 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(45, 78%, 58%);
-  --primary-foreground: hsl(240, 21%, 15%);
+  --primary: hsl(320, 60%, 75%);
+  --primary-foreground: hsl(340, 30%, 25%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
   --accent: hsl(240, 3.7%, 15.9%);
@@ -92,6 +95,18 @@
     background-color: var(--luxury-gray);
   }
   
+  .bg-soft-pink {
+    background-color: var(--soft-pink);
+  }
+  
+  .bg-rose-gold {
+    background-color: var(--rose-gold);
+  }
+  
+  .bg-cream {
+    background-color: var(--cream);
+  }
+  
   .border-luxury-gold {
     border-color: var(--luxury-gold);
   }
@@ -106,6 +121,14 @@
   
   .text-luxury-gray {
     color: var(--luxury-gray);
+  }
+  
+  .text-soft-pink {
+    color: var(--soft-pink);
+  }
+  
+  .text-rose-gold {
+    color: var(--rose-gold);
   }
   
   .animate-fade-in {

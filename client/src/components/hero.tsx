@@ -7,11 +7,11 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
+          src="https://static.wixstatic.com/media/bff472_ff8f129561dc493584d1a8a75e899ae1f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/bff472_ff8f129561dc493584d1a8a75e899ae1f000.jpg" 
           alt="Luxury beauty salon interior" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-luxury-navy bg-opacity-60"></div>
+        <div className="absolute inset-0 bg-luxury-navy bg-opacity-50"></div>
       </div>
       
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6 animate-fade-in">
@@ -26,7 +26,7 @@ export default function Hero() {
           <Link href="/services">
             <Button 
               size="lg" 
-              className="bg-luxury-gold text-white hover:bg-yellow-600 transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4"
+              className="bg-luxury-gold text-white hover:bg-rose-gold transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4"
             >
               Arbeitsplätze Entdecken
             </Button>
