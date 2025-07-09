@@ -7,6 +7,8 @@ Beauty Space Wien is a comprehensive workspace rental platform designed for beau
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Color scheme: Original dark navy and gold theme (not pink/feminine colors).
+Data structure: Clear categorization with proper organization by service type.
 
 ## System Architecture
 
@@ -123,3 +125,13 @@ Preferred communication style: Simple, everyday language.
 - **Performance**: Optimized builds and lazy loading where appropriate
 
 The application follows modern web development best practices with a focus on type safety, developer experience, and maintainable code structure. The architecture supports easy scaling and feature additions while maintaining code quality and performance.
+
+## Recent Changes
+
+### January 2025
+- **Data Integration**: Added real images and pricing from original beautyspace.at website
+- **Image Updates**: Integrated authentic workspace photos from Wix media CDN
+- **Pricing Structure**: Updated with real rates (makeup €10/hr, kosmetik €78-84/day, friseur €72/day, nageldesign €48/day, fußpflege €48/day)
+- **Data Organization**: Restructured workspace categories for better organization and clarity
+- **Color Scheme**: Maintained original dark navy and gold theme per user preference
+- **UI Consistency**: Ensured consistent hover states and button styling across all components

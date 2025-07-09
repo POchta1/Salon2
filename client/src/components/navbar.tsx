@@ -45,7 +45,7 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-luxury-gold text-white hover:bg-rose-gold transition-colors duration-300">
+            <Button className="bg-luxury-gold text-white hover:bg-yellow-600 transition-colors duration-300">
               Jetzt Buchen
             </Button>
           </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
                     {item.label}
                   </Link>
                 ))}
-                <Button className="bg-luxury-gold text-white hover:bg-rose-gold transition-colors duration-300 mt-6">
+                <Button className="bg-luxury-gold text-white hover:bg-yellow-600 transition-colors duration-300 mt-6">
                   Jetzt Buchen
                 </Button>
               </div>
