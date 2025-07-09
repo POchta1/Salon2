@@ -106,8 +106,8 @@ export default function Gallery() {
               onClick={() => setActiveFilter(category.id)}
               className={`transition-colors duration-300 ${
                 activeFilter === category.id
-                  ? "bg-luxury-gold text-white hover:bg-yellow-600"
-                  : "bg-white text-luxury-navy hover:bg-gray-100"
+                  ? "bg-luxury-gold text-luxury-navy hover:bg-luxury-gold/80"
+                  : "bg-white text-luxury-navy hover:bg-luxury-gray"
               }`}
             >
               {category.label}

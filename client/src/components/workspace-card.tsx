@@ -89,7 +89,7 @@ export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
           </div>
           
           <Button 
-            className="w-full bg-luxury-gold text-white hover:bg-yellow-600 transition-colors duration-300"
+            className="w-full bg-luxury-gold text-luxury-navy hover:bg-luxury-gold/80 transition-colors duration-300"
             onClick={() => setIsBookingOpen(true)}
             disabled={!workspace.isAvailable}
           >
