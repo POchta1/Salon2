@@ -3,17 +3,20 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Gem } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelector from "@/components/language-selector";
 
 export default function Navbar() {
   const [location] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Arbeitsplätze" },
-    { href: "/gallery", label: "Galerie" },
-    { href: "/franchise", label: "Franchise" },
-    { href: "/contact", label: "Kontakt" },
+    { href: "/", label: t('nav.home') },
+    { href: "/services", label: t('nav.services') },
+    { href: "/gallery", label: t('nav.gallery') },
+    { href: "/franchise", label: t('nav.franchise') },
+    { href: "/contact", label: t('nav.contact') },
   ];
 
   const isActive = (href: string) => {
@@ -26,27 +29,28 @@ export default function Navbar() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Gem className="text-luxury-gold text-2xl" />
-            <h1 className="text-2xl font-bold text-luxury-navy">Beauty Space</h1>
+            <Gem className="text-elegant-gray text-2xl" />
+            <h1 className="text-2xl font-bold text-elegant-black">Beauty Space</h1>
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={`transition-colors duration-300 ${
                   isActive(item.href)
-                    ? "text-luxury-gold font-medium"
-                    : "text-luxury-navy hover:text-luxury-gold"
+                    ? "text-elegant-black font-medium"
+                    : "text-elegant-gray hover:text-elegant-black"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-luxury-gold text-luxury-navy hover:bg-luxury-gold/80 transition-colors duration-300">
-              Jetzt Buchen
+            <LanguageSelector />
+            <Button className="bg-elegant-black text-white hover:bg-elegant-gray transition-colors duration-300">
+              {t('hero.discover')}
             </Button>
           </div>
           
@@ -65,16 +69,19 @@ export default function Navbar() {
                     href={item.href}
                     className={`text-lg transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-luxury-gold font-medium"
-                        : "text-luxury-navy hover:text-luxury-gold"
+                        ? "text-elegant-black font-medium"
+                        : "text-elegant-gray hover:text-elegant-black"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
                   </Link>
                 ))}
-                <Button className="bg-luxury-gold text-luxury-navy hover:bg-luxury-gold/80 transition-colors duration-300 mt-6">
-                  Jetzt Buchen
+                <div className="mt-4">
+                  <LanguageSelector />
+                </div>
+                <Button className="bg-elegant-black text-white hover:bg-elegant-gray transition-colors duration-300 mt-6">
+                  {t('hero.discover')}
                 </Button>
               </div>
             </SheetContent>
