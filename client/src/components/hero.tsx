@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -16,11 +19,11 @@ export default function Hero() {
       
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6 animate-fade-in backdrop-blur-sm bg-black/30 rounded-3xl py-12 shadow-2xl border border-white/20">
         <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-slide-up">
-          Ihr Exklusiver<br/>
-          <span className="text-gray-300 animate-pulse-slow">Beauty-Arbeitsplatz</span>
+          {t('hero.title')}<br/>
+          <span className="text-gray-300 animate-pulse-slow">{t('hero.subtitle')}</span>
         </h2>
         <p className="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          Mieten Sie flexible Arbeitsplätze in einem inspirierenden Umfeld für Beauty-Profis
+          {t('hero.description')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
           <Link href="/services">
@@ -28,7 +31,7 @@ export default function Hero() {
               size="lg" 
               className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4 animate-float shadow-lg"
             >
-              Arbeitsplätze Entdecken
+              {t('hero.discover')}
             </Button>
           </Link>
           <Link href="/franchise">
@@ -37,7 +40,7 @@ export default function Hero() {
               variant="outline" 
               className="border-2 border-white text-white bg-black/40 hover:bg-white hover:text-black transition-all duration-300 text-lg px-8 py-4 shadow-lg backdrop-blur-sm"
             >
-              Franchise Informationen
+              {t('hero.franchise')}
             </Button>
           </Link>
         </div>
