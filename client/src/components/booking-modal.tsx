@@ -66,8 +66,8 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
     },
     onSuccess: () => {
       toast({
-        title: "Buchung erfolgreich!",
-        description: "Ihre Buchungsanfrage wurde erfolgreich eingereicht.",
+        title: t('booking.success'),
+        description: t('booking.success.description'),
       });
       queryClient.invalidateQueries({ queryKey: ["/api/bookings"] });
       onClose();
@@ -75,8 +75,8 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
     },
     onError: (error) => {
       toast({
-        title: "Buchung fehlgeschlagen",
-        description: "Es gab ein Problem mit Ihrer Buchung. Bitte versuchen Sie es erneut.",
+        title: t('booking.error'),
+        description: t('booking.error.description'),
         variant: "destructive",
       });
     }
@@ -107,8 +107,8 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
   const onSubmit = (data: BookingFormData) => {
     if (!selectedDate) {
       toast({
-        title: "Datum erforderlich",
-        description: "Bitte wählen Sie ein Buchungsdatum aus.",
+        title: t('booking.dateRequired'),
+        description: t('booking.dateRequired.description'),
         variant: "destructive",
       });
       return;
@@ -140,8 +140,8 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
             <h4 className="font-semibold text-elegant-black mb-2">{workspace.name}</h4>
             <p className="text-sm text-elegant-gray mb-2">{workspace.location}</p>
             <div className="flex items-center space-x-4">
-              <span className="text-elegant-black font-bold">€{workspace.hourlyRate}/Std</span>
-              <span className="text-elegant-black font-bold">€{workspace.dailyRate}/Tag</span>
+              <span className="text-elegant-black font-bold">€{workspace.hourlyRate}/{t('workspace.per.hour')}</span>
+              <span className="text-elegant-black font-bold">€{workspace.dailyRate}/{t('workspace.per.day')}</span>
             </div>
           </div>
 
@@ -183,9 +183,9 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                 name="customerPhone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Telefon *</FormLabel>
+                    <FormLabel>{t('booking.customerPhone')}</FormLabel>
                     <FormControl>
-                      <Input type="tel" placeholder="Ihre Telefonnummer" {...field} />
+                      <Input type="tel" placeholder={t('booking.customerPhone')} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -194,7 +194,7 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
 
               {/* Date Selection */}
               <div>
-                <Label>Buchungsdatum *</Label>
+                <Label>{t('booking.bookingDate')}</Label>
                 <Popover>
                   <PopoverTrigger asChild>
                     <Button
@@ -204,7 +204,7 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                       }`}
                     >
                       <CalendarIcon className="mr-2 h-4 w-4" />
-                      {selectedDate ? format(selectedDate, "PPP", { locale: de }) : "Datum wählen"}
+                      {selectedDate ? format(selectedDate, "PPP", { locale: de }) : t('booking.selectDate')}
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0" align="start">
@@ -226,14 +226,14 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                   name="startTime"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Startzeit *</FormLabel>
+                      <FormLabel>{t('booking.startTime')}</FormLabel>
                       <Select onValueChange={(value) => {
                         field.onChange(value);
                         handleTimeChange();
                       }}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Startzeit wählen" />
+                            <SelectValue placeholder={t('booking.selectStartTime')} />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -258,14 +258,14 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                   name="endTime"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Endzeit *</FormLabel>
+                      <FormLabel>{t('booking.endTime')}</FormLabel>
                       <Select onValueChange={(value) => {
                         field.onChange(value);
                         handleTimeChange();
                       }}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Endzeit wählen" />
+                            <SelectValue placeholder={t('booking.selectEndTime')} />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -290,7 +290,7 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
               {calculatedTotal > 0 && (
                 <div className="bg-elegant-light p-4 rounded-lg border border-elegant-gray/20">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-elegant-black">Gesamtbetrag:</span>
+                    <span className="font-semibold text-elegant-black">{t('booking.total')}</span>
                     <div className="flex items-center text-elegant-black font-bold text-xl">
                       <Euro className="h-5 w-5 mr-1" />
                       {calculatedTotal.toFixed(2)}
@@ -307,14 +307,14 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                   className="flex-1"
                   disabled={createBookingMutation.isPending}
                 >
-                  Abbrechen
+                  {t('booking.cancel')}
                 </Button>
                 <Button
                   type="submit"
                   className="flex-1 bg-elegant-black hover:bg-elegant-gray text-white"
                   disabled={createBookingMutation.isPending}
                 >
-                  {createBookingMutation.isPending ? "Wird gebucht..." : "Jetzt buchen"}
+                  {createBookingMutation.isPending ? t('booking.booking') : t('booking.book')}
                 </Button>
               </div>
             </form>
