@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const galleryImages = [
   {
@@ -68,18 +69,21 @@ const galleryImages = [
   }
 ];
 
-const filterCategories = [
-  { id: "all", label: "Alle Bilder" },
-  { id: "salon", label: "Salon" },
-  { id: "makeup", label: "Makeup" },
-  { id: "spa", label: "Kosmetik" },
-  { id: "hair", label: "Friseur" },
-  { id: "nails", label: "Nageldesign" }
-];
+
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
   const [activeFilter, setActiveFilter] = useState("all");
+  const { t } = useLanguage();
+
+  const filterCategories = [
+    { id: "all", label: t('gallery.filters.all') },
+    { id: "salon", label: t('gallery.filters.salon') },
+    { id: "makeup", label: t('gallery.filters.makeup') },
+    { id: "spa", label: t('gallery.filters.spa') },
+    { id: "hair", label: t('gallery.filters.hair') },
+    { id: "nails", label: t('gallery.filters.nails') }
+  ];
 
   const filteredImages = galleryImages.filter(image => 
     activeFilter === "all" || image.category === activeFilter
@@ -90,10 +94,10 @@ export default function Gallery() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl font-bold text-luxury-navy mb-4">
-            Unsere Beauty Spaces
+            {t('gallery.spaces.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Entdecken Sie unsere luxuriösen Arbeitsplätze und inspirierenden Räumlichkeiten
+            {t('gallery.spaces.subtitle')}
           </p>
         </div>
 

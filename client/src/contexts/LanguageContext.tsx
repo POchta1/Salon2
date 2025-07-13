@@ -120,7 +120,100 @@ const translations = {
     'services.category.kosmetik': 'Kosmetik',
     'services.category.friseur': 'Friseur',
     'services.category.nageldesign': 'Nageldesign',
-    'services.category.fusspflege': 'Fußpflege'
+    'services.category.fusspflege': 'Fußpflege',
+    
+    // Additional Features
+    'features.inspiring.title': 'Inspiring Environment',
+    'features.inspiring.description': 'Connect with other beauty professionals and expand your network',
+    'features.hygiene.title': 'Hygiene & Safety',
+    'features.hygiene.description': 'Highest hygiene standards and professional cleaning systems for your safety',
+    
+    // Gallery Page
+    'gallery.filters.all': 'Alle Bilder',
+    'gallery.filters.salon': 'Salon',
+    'gallery.filters.makeup': 'Makeup',
+    'gallery.filters.spa': 'Kosmetik',
+    'gallery.filters.hair': 'Friseur',
+    'gallery.filters.nails': 'Nageldesign',
+    'gallery.spaces.title': 'Unsere Beauty Spaces',
+    'gallery.spaces.subtitle': 'Entdecken Sie unsere luxuriösen Arbeitsplätze und inspirierenden Räumlichkeiten',
+    
+    // About Us Section
+    'about.title': 'Über uns',
+    'about.subtitle': 'Willkommen bei Beauty Space Wien, Ihrem Anlaufpunkt für hochwertige Arbeitsplätze und professionelle Beauty-Technik.',
+    'about.description1': 'Neben spezialisierten Arbeitsplätzen bieten wir Ihnen moderne Ausstattung für saubere, hygienische Arbeitsumgebungen und Kosmetikmaschinen, die modernste Technologien für Hautpflege und ästhetische Behandlungen einsetzen.',
+    'about.description2': 'Unser flexibler Arbeitsplatz ist perfekt für Beauty-Profis, die nach Erfolg streben. Mit modernen und professionell ausgestatteten Räumlichkeiten bieten wir die ideale Umgebung für erstklassige Dienstleistungen.',
+    
+    // How It Works Section
+    'how.title': 'Wie funktioniert es?',
+    'how.subtitle': 'In nur wenigen Schritten zu Ihrem perfekten Beauty-Arbeitsplatz',
+    'how.individual.title': 'Individuelle Arbeitsplätze',
+    'how.individual.description': 'Wir stellen voll ausgestattete Arbeitsplätze in unseren Beauty-Salons zur Verfügung, damit du direkt loslegen kannst.',
+    'how.support.title': 'Unterstützung und Beratung',
+    'how.support.description': 'Unser engagiertes Team steht dir zur Seite und bietet dir Unterstützung und Beratung in verschiedenen Bereichen.',
+    'how.flexibility.title': 'Flexibilität',
+    'how.flexibility.description': 'Wir bieten flexible Mietoptionen an, damit du deine Arbeitszeiten anpassen und deinen Bedürfnissen gerecht werden kannst.',
+    
+    // Target Audience Section
+    'target.title': 'Für wen ist ein Beauty Space geeignet?',
+    'target.subtitle': 'Unsere Arbeitsplätze sind perfekt für verschiedene Beauty-Profis',
+    'target.hairdresser': 'Friseure',
+    'target.cosmetician': 'Kosmetiker',
+    'target.makeup': 'Make-up-Artists',
+    'target.nail': 'Nageltechniker',
+    'target.skincare': 'Hautpflegetechniker',
+    'target.visagist': 'Visagisten',
+    'target.stylist': 'Hairstylisten',
+    'target.therapist': 'Beautytherapeuten',
+    'target.lash': 'Wimpernstylisten',
+    'target.massage': 'Massage-Therapeuten',
+    'target.colorist': 'Haarfärbespezialisten',
+    'target.consultant': 'Schönheitsberater',
+    
+    // Franchise Benefits
+    'franchise.benefits.title': 'Vorteile des Franchisings',
+    'franchise.benefit1.title': 'Bewährtes Konzept',
+    'franchise.benefit1.description': 'Profitieren Sie von unserem erprobten Geschäftsmodell und etablierten Prozessen.',
+    'franchise.benefit2.title': 'Umfassende Schulung',
+    'franchise.benefit2.description': 'Vollständige Ausbildung und laufende Unterstützung für Ihren Erfolg.',
+    'franchise.benefit3.title': 'Marketing Support',
+    'franchise.benefit3.description': 'Professionelle Marketingstrategien und Werbekampagnen inklusive.',
+    
+    // Franchise Why Choose Us
+    'franchise.why.title': 'Warum Beauty Space Franchise?',
+    'franchise.why.brand.title': 'Starke Marke',
+    'franchise.why.brand.description': 'Etablierte Marke mit hoher Wiedererkennungswert in der Beauty-Branche',
+    'franchise.why.processes.title': 'Bewährte Prozesse',
+    'franchise.why.processes.description': 'Standardisierte Abläufe und erprobte Geschäftsprozesse',
+    'franchise.why.support.title': 'Kontinuierliche Unterstützung',
+    'franchise.why.support.description': 'Laufende Betreuung durch unser erfahrenes Team',
+    'franchise.why.territory.title': 'Exklusive Gebiete',
+    'franchise.why.territory.description': 'Gebietsschutz für Ihren Standort und nachhaltigen Erfolg',
+    'franchise.why.investment.title': 'Flexible Investition',
+    'franchise.why.investment.description': 'Verschiedene Investitionsmöglichkeiten je nach Standort',
+    'franchise.why.roi.title': 'Schnelle Amortisation',
+    'franchise.why.roi.description': 'Attraktive Rendite und schnelle Rückzahlung der Investition',
+    
+    // Franchise Stats
+    'franchise.stats.title': 'Unsere Erfolgszahlen',
+    'franchise.stats.locations': 'Standorte in Wien',
+    'franchise.stats.customers': 'Zufriedene Kunden',
+    'franchise.stats.satisfaction': 'Auslastung',
+    'franchise.stats.experience': 'Jahre Erfahrung',
+    
+    // Franchise Form
+    'franchise.form.title': 'Franchise Informationen Anfordern',
+    'franchise.form.subtitle': 'Kontaktieren Sie uns für ein persönliches Beratungsgespräch',
+    'franchise.form.name': 'Name',
+    'franchise.form.email': 'E-Mail',
+    'franchise.form.phone': 'Telefon',
+    'franchise.form.message': 'Nachricht',
+    'franchise.form.placeholder': 'Erzählen Sie uns von Ihrem Interesse an einer Franchise...',
+    
+    // Contact & Locations
+    'contact.locations.title': 'Kontakt & Standorte',
+    'contact.locations.subtitle': 'Besuchen Sie uns in einem unserer Standorte oder kontaktieren Sie uns für weitere Informationen',
+    'contact.form.title': 'Kontaktieren Sie uns'
   },
   en: {
     // Navigation
@@ -231,7 +324,100 @@ const translations = {
     'services.category.kosmetik': 'Cosmetics',
     'services.category.friseur': 'Hair',
     'services.category.nageldesign': 'Nail Design',
-    'services.category.fusspflege': 'Foot Care'
+    'services.category.fusspflege': 'Foot Care',
+    
+    // Additional Features
+    'features.inspiring.title': 'Inspiring Environment',
+    'features.inspiring.description': 'Connect with other beauty professionals and expand your network',
+    'features.hygiene.title': 'Hygiene & Safety',
+    'features.hygiene.description': 'Highest hygiene standards and professional cleaning systems for your safety',
+    
+    // Gallery Page
+    'gallery.filters.all': 'All Images',
+    'gallery.filters.salon': 'Salon',
+    'gallery.filters.makeup': 'Makeup',
+    'gallery.filters.spa': 'Cosmetics',
+    'gallery.filters.hair': 'Hair',
+    'gallery.filters.nails': 'Nail Design',
+    'gallery.spaces.title': 'Our Beauty Spaces',
+    'gallery.spaces.subtitle': 'Discover our luxurious workspaces and inspiring environments',
+    
+    // About Us Section
+    'about.title': 'About Us',
+    'about.subtitle': 'Welcome to Beauty Space Wien, your destination for high-quality workspaces and professional beauty technology.',
+    'about.description1': 'In addition to specialized workspaces, we offer modern equipment for clean, hygienic work environments and cosmetic machines using the latest technologies for skincare and aesthetic treatments.',
+    'about.description2': 'Our flexible workspace is perfect for beauty professionals striving for success. With modern and professionally equipped facilities, we provide the ideal environment for first-class services.',
+    
+    // How It Works Section
+    'how.title': 'How It Works',
+    'how.subtitle': 'In just a few steps to your perfect beauty workspace',
+    'how.individual.title': 'Individual Workspaces',
+    'how.individual.description': 'We provide fully equipped workspaces in our beauty salons so you can get started right away.',
+    'how.support.title': 'Support and Consultation',
+    'how.support.description': 'Our dedicated team is by your side and offers support and consultation in various areas.',
+    'how.flexibility.title': 'Flexibility',
+    'how.flexibility.description': 'We offer flexible rental options so you can adjust your working hours and meet your needs.',
+    
+    // Target Audience Section
+    'target.title': 'Who is a Beauty Space suitable for?',
+    'target.subtitle': 'Our workspaces are perfect for various beauty professionals',
+    'target.hairdresser': 'Hairdressers',
+    'target.cosmetician': 'Cosmeticians',
+    'target.makeup': 'Make-up Artists',
+    'target.nail': 'Nail Technicians',
+    'target.skincare': 'Skincare Technicians',
+    'target.visagist': 'Visagists',
+    'target.stylist': 'Hair Stylists',
+    'target.therapist': 'Beauty Therapists',
+    'target.lash': 'Lash Stylists',
+    'target.massage': 'Massage Therapists',
+    'target.colorist': 'Hair Color Specialists',
+    'target.consultant': 'Beauty Consultants',
+    
+    // Franchise Benefits
+    'franchise.benefits.title': 'Franchise Benefits',
+    'franchise.benefit1.title': 'Proven Concept',
+    'franchise.benefit1.description': 'Benefit from our proven business model and established processes.',
+    'franchise.benefit2.title': 'Comprehensive Training',
+    'franchise.benefit2.description': 'Complete training and ongoing support for your success.',
+    'franchise.benefit3.title': 'Marketing Support',
+    'franchise.benefit3.description': 'Professional marketing strategies and advertising campaigns included.',
+    
+    // Franchise Why Choose Us
+    'franchise.why.title': 'Why Beauty Space Franchise?',
+    'franchise.why.brand.title': 'Strong Brand',
+    'franchise.why.brand.description': 'Established brand with high recognition value in the beauty industry',
+    'franchise.why.processes.title': 'Proven Processes',
+    'franchise.why.processes.description': 'Standardized procedures and proven business processes',
+    'franchise.why.support.title': 'Continuous Support',
+    'franchise.why.support.description': 'Ongoing support from our experienced team',
+    'franchise.why.territory.title': 'Exclusive Territories',
+    'franchise.why.territory.description': 'Territory protection for your location and sustainable success',
+    'franchise.why.investment.title': 'Flexible Investment',
+    'franchise.why.investment.description': 'Various investment options depending on location',
+    'franchise.why.roi.title': 'Quick ROI',
+    'franchise.why.roi.description': 'Attractive returns and quick payback of investment',
+    
+    // Franchise Stats
+    'franchise.stats.title': 'Our Success Numbers',
+    'franchise.stats.locations': 'Locations in Vienna',
+    'franchise.stats.customers': 'Satisfied Customers',
+    'franchise.stats.satisfaction': 'Utilization',
+    'franchise.stats.experience': 'Years Experience',
+    
+    // Franchise Form
+    'franchise.form.title': 'Request Franchise Information',
+    'franchise.form.subtitle': 'Contact us for a personal consultation',
+    'franchise.form.name': 'Name',
+    'franchise.form.email': 'Email',
+    'franchise.form.phone': 'Phone',
+    'franchise.form.message': 'Message',
+    'franchise.form.placeholder': 'Tell us about your interest in a franchise...',
+    
+    // Contact & Locations
+    'contact.locations.title': 'Contact & Locations',
+    'contact.locations.subtitle': 'Visit us at one of our locations or contact us for more information',
+    'contact.form.title': 'Contact Us'
   },
   uk: {
     // Navigation
@@ -342,7 +528,100 @@ const translations = {
     'services.category.kosmetik': 'Косметика',
     'services.category.friseur': 'Перукарня',
     'services.category.nageldesign': 'Нейл-Дизайн',
-    'services.category.fusspflege': 'Педикюр'
+    'services.category.fusspflege': 'Педикюр',
+    
+    // Additional Features
+    'features.inspiring.title': 'Надихаюче Середовище',
+    'features.inspiring.description': 'Повʼязуйтесь з іншими beauty-професіоналами та розширюйте свою мережу',
+    'features.hygiene.title': 'Гігієна та Безпека',
+    'features.hygiene.description': 'Найвищі стандарти гігієни та професійні системи очищення для вашої безпеки',
+    
+    // Gallery Page
+    'gallery.filters.all': 'Всі Зображення',
+    'gallery.filters.salon': 'Салон',
+    'gallery.filters.makeup': 'Makeup',
+    'gallery.filters.spa': 'Косметика',
+    'gallery.filters.hair': 'Перукарня',
+    'gallery.filters.nails': 'Нейл-Дизайн',
+    'gallery.spaces.title': 'Наші Beauty Spaces',
+    'gallery.spaces.subtitle': 'Відкрийте наші розкішні робочі місця та натхненні середовища',
+    
+    // About Us Section
+    'about.title': 'Про Нас',
+    'about.subtitle': 'Ласкаво просимо до Beauty Space Wien, вашого пункту призначення для високоякісних робочих місць та професійних beauty-технологій.',
+    'about.description1': 'Окрім спеціалізованих робочих місць, ми пропонуємо сучасне обладнання для чистих, гігієнічних робочих середовищ та косметичні машини з новітніми технологіями для догляду за шкірою та естетичних процедур.',
+    'about.description2': 'Наше гнучке робоче місце ідеально підходить для beauty-професіоналів, які прагнуть успіху. З сучасними та професійно обладнаними приміщеннями ми надаємо ідеальне середовище для першокласних послуг.',
+    
+    // How It Works Section
+    'how.title': 'Як Це Працює',
+    'how.subtitle': 'Лише кілька кроків до вашого ідеального beauty-робочого місця',
+    'how.individual.title': 'Індивідуальні Робочі Місця',
+    'how.individual.description': 'Ми надаємо повністю обладнані робочі місця в наших beauty-салонах, щоб ви могли почати відразу.',
+    'how.support.title': 'Підтримка та Консультації',
+    'how.support.description': 'Наша відданіа команда поруч з вами і пропонує підтримку та консультації в різних сферах.',
+    'how.flexibility.title': 'Гнучкість',
+    'how.flexibility.description': 'Ми пропонуємо гнучкі варіанти оренди, щоб ви могли налаштувати свій робочий час відповідно до своїх потреб.',
+    
+    // Target Audience Section
+    'target.title': 'Для кого підходить Beauty Space?',
+    'target.subtitle': 'Наші робочі місця ідеально підходять для різних beauty-професіоналів',
+    'target.hairdresser': 'Перукарі',
+    'target.cosmetician': 'Косметологи',
+    'target.makeup': 'Makeup-Артисти',
+    'target.nail': 'Нейл-Технікі',
+    'target.skincare': 'Технікі з Догляду за Шкірою',
+    'target.visagist': 'Візажисти',
+    'target.stylist': 'Стилісти',
+    'target.therapist': 'Beauty-Терапевти',
+    'target.lash': 'Lash-Стилісти',
+    'target.massage': 'Масажисти',
+    'target.colorist': 'Колористи',
+    'target.consultant': 'Beauty-Консультанти',
+    
+    // Franchise Benefits
+    'franchise.benefits.title': 'Переваги Франшизи',
+    'franchise.benefit1.title': 'Перевірена Концепція',
+    'franchise.benefit1.description': 'Скористайтеся нашою перевіреною бізнес-моделлю та встановленими процесами.',
+    'franchise.benefit2.title': 'Комплексне Навчання',
+    'franchise.benefit2.description': 'Повне навчання та постійна підтримка для вашого успіху.',
+    'franchise.benefit3.title': 'Маркетингова Підтримка',
+    'franchise.benefit3.description': 'Професійні маркетингові стратегії та рекламні кампанії включено.',
+    
+    // Franchise Why Choose Us
+    'franchise.why.title': 'Чому Beauty Space Франшиза?',
+    'franchise.why.brand.title': 'Сильний Бренд',
+    'franchise.why.brand.description': 'Встановлений бренд з високою цінністю визнання в beauty-індустрії',
+    'franchise.why.processes.title': 'Перевірені Процеси',
+    'franchise.why.processes.description': 'Стандартизовані процедури та перевірені бізнес-процеси',
+    'franchise.why.support.title': 'Постійна Підтримка',
+    'franchise.why.support.description': 'Постійна підтримка нашої досвідченої команди',
+    'franchise.why.territory.title': 'Ексклюзивні Території',
+    'franchise.why.territory.description': 'Захист території для вашого місця розташування та сталого успіху',
+    'franchise.why.investment.title': 'Гнучкі Інвестиції',
+    'franchise.why.investment.description': 'Різні варіанти інвестицій залежно від місця розташування',
+    'franchise.why.roi.title': 'Швидка Окупність',
+    'franchise.why.roi.description': 'Привабливі доходи та швидка окупність інвестицій',
+    
+    // Franchise Stats
+    'franchise.stats.title': 'Наші Цифри Успіху',
+    'franchise.stats.locations': 'Локації у Відні',
+    'franchise.stats.customers': 'Задоволені Клієнти',
+    'franchise.stats.satisfaction': 'Завантаженість',
+    'franchise.stats.experience': 'Років Досвіду',
+    
+    // Franchise Form
+    'franchise.form.title': 'Запитати Інформацію про Франшизу',
+    'franchise.form.subtitle': 'Звʼяжіться з нами для персональної консультації',
+    'franchise.form.name': 'Імʼя',
+    'franchise.form.email': 'Електронна Пошта',
+    'franchise.form.phone': 'Телефон',
+    'franchise.form.message': 'Повідомлення',
+    'franchise.form.placeholder': 'Розкажіть нам про ваш інтерес до франшизи...',
+    
+    // Contact & Locations
+    'contact.locations.title': 'Контакти та Локації',
+    'contact.locations.subtitle': 'Відвідайте нас в одній з наших локацій або звʼяжіться з нами для додаткової інформації',
+    'contact.form.title': 'Звʼяжіться з Нами'
   }
 };
 
