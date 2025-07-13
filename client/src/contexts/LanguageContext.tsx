@@ -101,7 +101,26 @@ const translations = {
     'workspace.nageldesign': 'Nageldesign Studio',
     'workspace.fusspflege': 'Fußpflege Behandlung',
     'workspace.per.hour': 'pro Stunde',
-    'workspace.per.day': 'pro Tag'
+    'workspace.per.day': 'pro Tag',
+    
+    // Franchise Page
+    'franchise.title': 'Franchise-Möglichkeiten',
+    'franchise.subtitle': 'Werden Sie Teil unseres erfolgreichen Beauty Space Netzwerks und starten Sie Ihr eigenes Business mit bewährten Konzepten und professioneller Unterstützung',
+    'franchise.request.success': 'Anfrage erfolgreich gesendet!',
+    'franchise.request.success.description': 'Wir werden uns bald bei Ihnen melden.',
+    'franchise.request.error': 'Fehler beim Senden',
+    'franchise.request.error.description': 'Bitte versuchen Sie es später erneut.',
+    
+    // Services Page
+    'services.title': 'Unsere Arbeitsplätze',
+    'services.subtitle': 'Professionell ausgestattete Arbeitsplätze für alle Beauty-Bereiche',
+    'services.search.placeholder': 'Arbeitsplatz suchen...',
+    'services.category.all': 'Alle Arbeitsplätze',
+    'services.category.makeup': 'Makeup',
+    'services.category.kosmetik': 'Kosmetik',
+    'services.category.friseur': 'Friseur',
+    'services.category.nageldesign': 'Nageldesign',
+    'services.category.fusspflege': 'Fußpflege'
   },
   en: {
     // Navigation
@@ -193,7 +212,26 @@ const translations = {
     'workspace.nageldesign': 'Nail Design Studio',
     'workspace.fusspflege': 'Foot Care Treatment',
     'workspace.per.hour': 'per hour',
-    'workspace.per.day': 'per day'
+    'workspace.per.day': 'per day',
+    
+    // Franchise Page
+    'franchise.title': 'Franchise Opportunities',
+    'franchise.subtitle': 'Join our successful Beauty Space network and start your own business with proven concepts and professional support',
+    'franchise.request.success': 'Request sent successfully!',
+    'franchise.request.success.description': 'We will contact you soon.',
+    'franchise.request.error': 'Error sending request',
+    'franchise.request.error.description': 'Please try again later.',
+    
+    // Services Page
+    'services.title': 'Our Workspaces',
+    'services.subtitle': 'Professionally equipped workspaces for all beauty areas',
+    'services.search.placeholder': 'Search workspace...',
+    'services.category.all': 'All Workspaces',
+    'services.category.makeup': 'Makeup',
+    'services.category.kosmetik': 'Cosmetics',
+    'services.category.friseur': 'Hair',
+    'services.category.nageldesign': 'Nail Design',
+    'services.category.fusspflege': 'Foot Care'
   },
   uk: {
     // Navigation
@@ -285,7 +323,26 @@ const translations = {
     'workspace.nageldesign': 'Студія Нейл-Дизайну',
     'workspace.fusspflege': 'Процедури Педикюру',
     'workspace.per.hour': 'за годину',
-    'workspace.per.day': 'за день'
+    'workspace.per.day': 'за день',
+    
+    // Franchise Page
+    'franchise.title': 'Франшизні Можливості',
+    'franchise.subtitle': 'Приєднуйтесь до нашої успішної мережі Beauty Space і відкрийте власний бізнес з перевіреними концепціями та професійною підтримкою',
+    'franchise.request.success': 'Запит успішно надіслано!',
+    'franchise.request.success.description': 'Ми звʼяжемося з вами найближчим часом.',
+    'franchise.request.error': 'Помилка при надсиланні',
+    'franchise.request.error.description': 'Будь ласка, спробуйте пізніше.',
+    
+    // Services Page
+    'services.title': 'Наші Робочі Місця',
+    'services.subtitle': 'Професійно обладнані робочі місця для всіх сфер краси',
+    'services.search.placeholder': 'Пошук робочого місця...',
+    'services.category.all': 'Всі Робочі Місця',
+    'services.category.makeup': 'Makeup',
+    'services.category.kosmetik': 'Косметика',
+    'services.category.friseur': 'Перукарня',
+    'services.category.nageldesign': 'Нейл-Дизайн',
+    'services.category.fusspflege': 'Педикюр'
   }
 };
 

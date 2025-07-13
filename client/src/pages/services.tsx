@@ -4,20 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Filter } from "lucide-react";
 import WorkspaceCard from "@/components/workspace-card";
+import { useLanguage } from "@/contexts/LanguageContext";
 import type { Workspace } from "@shared/schema";
-
-const categories = [
-  { id: "all", label: "Alle Arbeitsplätze" },
-  { id: "makeup", label: "Makeup" },
-  { id: "kosmetik", label: "Kosmetik" },
-  { id: "friseur", label: "Friseur" },
-  { id: "nageldesign", label: "Nageldesign" },
-  { id: "fußpflege", label: "Fußpflege" },
-];
 
 export default function Services() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
+  const { t } = useLanguage();
+
+  const categories = [
+    { id: "all", label: t('services.category.all') },
+    { id: "makeup", label: t('services.category.makeup') },
+    { id: "kosmetik", label: t('services.category.kosmetik') },
+    { id: "friseur", label: t('services.category.friseur') },
+    { id: "nageldesign", label: t('services.category.nageldesign') },
+    { id: "fußpflege", label: t('services.category.fusspflege') },
+  ];
 
   const { data: workspaces, isLoading } = useQuery<Workspace[]>({
     queryKey: ["/api/workspaces"],
@@ -51,10 +53,10 @@ export default function Services() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl font-bold text-luxury-navy mb-4">
-            Unsere Arbeitsplätze
+            {t('services.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professionell ausgestattete Arbeitsplätze für alle Beauty-Bereiche
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -64,7 +66,7 @@ export default function Services() {
           <div className="relative max-w-md mx-auto">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
             <Input
-              placeholder="Arbeitsplatz suchen..."
+              placeholder={t('services.search.placeholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="pl-10"

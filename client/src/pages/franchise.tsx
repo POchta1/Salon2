@@ -9,6 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { insertContactSchema } from "@shared/schema";
 import { z } from "zod";
 import { Handshake, GraduationCap, TrendingUp, Users, Star, DollarSign, CheckCircle } from "lucide-react";
@@ -22,6 +23,7 @@ type FranchiseContactData = z.infer<typeof franchiseContactSchema>;
 export default function Franchise() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   const form = useForm<FranchiseContactData>({
     resolver: zodResolver(franchiseContactSchema),
@@ -42,15 +44,15 @@ export default function Franchise() {
     onSuccess: () => {
       setIsSubmitted(true);
       toast({
-        title: "Anfrage erfolgreich gesendet!",
-        description: "Wir werden uns bald bei Ihnen melden.",
+        title: t('franchise.request.success'),
+        description: t('franchise.request.success.description'),
       });
       form.reset();
     },
     onError: () => {
       toast({
-        title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es später erneut.",
+        title: t('franchise.request.error'),
+        description: t('franchise.request.error.description'),
         variant: "destructive",
       });
     }
@@ -66,10 +68,10 @@ export default function Franchise() {
         {/* Hero Section */}
         <div className="text-center mb-20 animate-fade-in">
           <h1 className="text-5xl font-bold text-luxury-navy mb-6">
-            Franchise-Möglichkeiten
+            {t('franchise.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Werden Sie Teil unseres erfolgreichen Beauty Space Netzwerks und starten Sie Ihr eigenes Business mit bewährten Konzepten und professioneller Unterstützung
+            {t('franchise.subtitle')}
           </p>
         </div>
 
