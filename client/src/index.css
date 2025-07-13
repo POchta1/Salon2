@@ -3,53 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(329, 45%, 97%);
-  --foreground: hsl(329, 12%, 34%);
-  --muted: hsl(329, 21%, 82%);
-  --muted-foreground: hsl(329, 12%, 34%);
+  --background: hsl(0, 0%, 98%);
+  --foreground: hsl(0, 0%, 15%);
+  --muted: hsl(0, 0%, 88%);
+  --muted-foreground: hsl(0, 0%, 45%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(329, 12%, 34%);
+  --popover-foreground: hsl(0, 0%, 15%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(329, 12%, 34%);
-  --border: hsl(329, 21%, 82%);
-  --input: hsl(329, 21%, 82%);
-  --primary: hsl(329, 12%, 34%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(329, 21%, 82%);
-  --secondary-foreground: hsl(329, 12%, 34%);
-  --accent: hsl(329, 21%, 82%);
-  --accent-foreground: hsl(329, 12%, 34%);
+  --card-foreground: hsl(0, 0%, 15%);
+  --border: hsl(0, 0%, 85%);
+  --input: hsl(0, 0%, 85%);
+  --primary: hsl(0, 0%, 10%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 88%);
+  --secondary-foreground: hsl(0, 0%, 15%);
+  --accent: hsl(0, 0%, 94%);
+  --accent-foreground: hsl(0, 0%, 15%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
-  --ring: hsl(329, 12%, 34%);
+  --ring: hsl(0, 0%, 30%);
   --radius: 0.5rem;
   
-  /* Beauty Space Custom Colors */
-  --luxury-navy: hsl(329, 12%, 34%);
-  --luxury-gold: hsl(329, 21%, 82%);
-  --luxury-gray: hsl(329, 45%, 97%);
+  /* Monochrome Custom Colors */
+  --elegant-black: hsl(0, 0%, 10%);
+  --elegant-gray: hsl(0, 0%, 65%);
+  --elegant-light: hsl(0, 0%, 96%);
 }
 
 .dark {
-  --background: hsl(329, 12%, 34%);
-  --foreground: hsl(329, 45%, 97%);
-  --muted: hsl(329, 21%, 82%);
-  --muted-foreground: hsl(329, 45%, 97%);
-  --popover: hsl(329, 12%, 34%);
-  --popover-foreground: hsl(329, 45%, 97%);
-  --card: hsl(329, 12%, 34%);
-  --card-foreground: hsl(329, 45%, 97%);
-  --border: hsl(329, 21%, 82%);
-  --input: hsl(329, 21%, 82%);
-  --primary: hsl(329, 21%, 82%);
-  --primary-foreground: hsl(329, 12%, 34%);
-  --secondary: hsl(329, 21%, 82%);
-  --secondary-foreground: hsl(329, 12%, 34%);
-  --accent: hsl(329, 21%, 82%);
-  --accent-foreground: hsl(329, 12%, 34%);
+  --background: hsl(0, 0%, 8%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(0, 0%, 18%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 20%);
+  --primary: hsl(0, 0%, 98%);
+  --primary-foreground: hsl(0, 0%, 8%);
+  --secondary: hsl(0, 0%, 18%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(0, 0%, 15%);
+  --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(329, 21%, 82%);
+  --ring: hsl(0, 0%, 70%);
 }
 
 @layer base {
@@ -68,44 +68,44 @@
 }
 
 @layer utilities {
-  .luxury-navy {
-    color: var(--luxury-navy);
+  .elegant-black {
+    color: var(--elegant-black);
   }
   
-  .luxury-gold {
-    color: var(--luxury-gold);
+  .elegant-gray {
+    color: var(--elegant-gray);
   }
   
-  .luxury-gray {
-    color: var(--luxury-gray);
+  .elegant-light {
+    color: var(--elegant-light);
   }
   
-  .bg-luxury-navy {
-    background-color: var(--luxury-navy);
+  .bg-elegant-black {
+    background-color: var(--elegant-black);
   }
   
-  .bg-luxury-gold {
-    background-color: var(--luxury-gold);
+  .bg-elegant-gray {
+    background-color: var(--elegant-gray);
   }
   
-  .bg-luxury-gray {
-    background-color: var(--luxury-gray);
+  .bg-elegant-light {
+    background-color: var(--elegant-light);
   }
   
-  .border-luxury-gold {
-    border-color: var(--luxury-gold);
+  .border-elegant-gray {
+    border-color: var(--elegant-gray);
   }
   
-  .text-luxury-navy {
-    color: var(--luxury-navy);
+  .text-elegant-black {
+    color: var(--elegant-black);
   }
   
-  .text-luxury-gold {
-    color: var(--luxury-gold);
+  .text-elegant-gray {
+    color: var(--elegant-gray);
   }
   
-  .text-luxury-gray {
-    color: var(--luxury-gray);
+  .text-elegant-light {
+    color: var(--elegant-light);
   }
   
   .animate-fade-in {
@@ -189,14 +189,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--luxury-gray);
+  background: var(--elegant-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--luxury-gold);
+  background: var(--elegant-gray);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(45, 78%, 48%);
+  background: var(--elegant-black);
 }
