@@ -78,7 +78,7 @@ export default function Franchise() {
         {/* Benefits Section */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-luxury-navy text-center mb-12">
-            Vorteile des Franchisings
+            {t('franchise.benefits.title')}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 animate-slide-up">
@@ -86,11 +86,11 @@ export default function Franchise() {
                 <div className="text-luxury-gold text-5xl mb-4 flex justify-center">
                   <Handshake />
                 </div>
-                <CardTitle className="text-luxury-navy">Bewährtes Konzept</CardTitle>
+                <CardTitle className="text-luxury-navy">{t('franchise.benefit1.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Profitieren Sie von unserem erprobten Geschäftsmodell und etablierten Prozessen, die bereits in mehreren Standorten erfolgreich umgesetzt wurden.
+                  {t('franchise.benefit1.description')}
                 </p>
               </CardContent>
             </Card>
@@ -100,11 +100,11 @@ export default function Franchise() {
                 <div className="text-luxury-gold text-5xl mb-4 flex justify-center">
                   <GraduationCap />
                 </div>
-                <CardTitle className="text-luxury-navy">Umfassende Schulung</CardTitle>
+                <CardTitle className="text-luxury-navy">{t('franchise.benefit2.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Vollständige Ausbildung und laufende Unterstützung für Ihren Erfolg. Von der Geschäftsführung bis zum Kundenservice - wir bereiten Sie optimal vor.
+                  {t('franchise.benefit2.description')}
                 </p>
               </CardContent>
             </Card>
@@ -114,11 +114,11 @@ export default function Franchise() {
                 <div className="text-luxury-gold text-5xl mb-4 flex justify-center">
                   <TrendingUp />
                 </div>
-                <CardTitle className="text-luxury-navy">Marketing Support</CardTitle>
+                <CardTitle className="text-luxury-navy">{t('franchise.benefit3.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Professionelle Marketingstrategien und Werbekampagnen inklusive. Nutzen Sie unsere etablierte Marke und bewährte Marketingkonzepte.
+                  {t('franchise.benefit3.description')}
                 </p>
               </CardContent>
             </Card>
@@ -128,49 +128,49 @@ export default function Franchise() {
         {/* Additional Benefits */}
         <div className="mb-20 bg-luxury-gray p-12 rounded-2xl">
           <h2 className="text-3xl font-bold text-luxury-navy text-center mb-12">
-            Warum Beauty Space Franchise?
+            {t('franchise.why.title')}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex items-start space-x-4">
               <CheckCircle className="text-luxury-gold h-6 w-6 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-luxury-navy mb-2">Starke Marke</h4>
-                <p className="text-gray-600">Etablierte Marke mit hoher Wiedererkennungswert in der Beauty-Branche</p>
+                <h4 className="font-semibold text-luxury-navy mb-2">{t('franchise.why.brand.title')}</h4>
+                <p className="text-gray-600">{t('franchise.why.brand.description')}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <CheckCircle className="text-luxury-gold h-6 w-6 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-luxury-navy mb-2">Bewährte Prozesse</h4>
-                <p className="text-gray-600">Standardisierte Abläufe und erprobte Geschäftsprozesse</p>
+                <h4 className="font-semibold text-luxury-navy mb-2">{t('franchise.why.processes.title')}</h4>
+                <p className="text-gray-600">{t('franchise.why.processes.description')}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <CheckCircle className="text-luxury-gold h-6 w-6 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-luxury-navy mb-2">Kontinuierliche Unterstützung</h4>
-                <p className="text-gray-600">Laufende Betreuung durch unser erfahrenes Team</p>
+                <h4 className="font-semibold text-luxury-navy mb-2">{t('franchise.why.support.title')}</h4>
+                <p className="text-gray-600">{t('franchise.why.support.description')}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <CheckCircle className="text-luxury-gold h-6 w-6 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-luxury-navy mb-2">Exklusive Gebiete</h4>
-                <p className="text-gray-600">Gebietsschutz für Ihren Standort und nachhaltigen Erfolg</p>
+                <h4 className="font-semibold text-luxury-navy mb-2">{t('franchise.why.territory.title')}</h4>
+                <p className="text-gray-600">{t('franchise.why.territory.description')}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <CheckCircle className="text-luxury-gold h-6 w-6 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-luxury-navy mb-2">Flexible Investition</h4>
-                <p className="text-gray-600">Verschiedene Investitionsmöglichkeiten je nach Standort</p>
+                <h4 className="font-semibold text-luxury-navy mb-2">{t('franchise.why.investment.title')}</h4>
+                <p className="text-gray-600">{t('franchise.why.investment.description')}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <CheckCircle className="text-luxury-gold h-6 w-6 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-luxury-navy mb-2">Schnelle Amortisation</h4>
-                <p className="text-gray-600">Attraktive Rendite und schnelle Rückzahlung der Investition</p>
+                <h4 className="font-semibold text-luxury-navy mb-2">{t('franchise.why.roi.title')}</h4>
+                <p className="text-gray-600">{t('franchise.why.roi.description')}</p>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function Franchise() {
         {/* Stats Section */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-luxury-navy text-center mb-12">
-            Unsere Erfolgszahlen
+            {t('franchise.stats.title')}
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -187,28 +187,28 @@ export default function Franchise() {
                 <Star />
               </div>
               <div className="text-4xl font-bold text-luxury-navy mb-2">4+</div>
-              <p className="text-gray-600">Standorte in Wien</p>
+              <p className="text-gray-600">{t('franchise.stats.locations')}</p>
             </div>
             <div className="text-center">
               <div className="text-luxury-gold text-5xl mb-4 flex justify-center">
                 <Users />
               </div>
               <div className="text-4xl font-bold text-luxury-navy mb-2">500+</div>
-              <p className="text-gray-600">Zufriedene Kunden</p>
+              <p className="text-gray-600">{t('franchise.stats.customers')}</p>
             </div>
             <div className="text-center">
               <div className="text-luxury-gold text-5xl mb-4 flex justify-center">
                 <DollarSign />
               </div>
               <div className="text-4xl font-bold text-luxury-navy mb-2">95%</div>
-              <p className="text-gray-600">Auslastung</p>
+              <p className="text-gray-600">{t('franchise.stats.satisfaction')}</p>
             </div>
             <div className="text-center">
               <div className="text-luxury-gold text-5xl mb-4 flex justify-center">
                 <TrendingUp />
               </div>
               <div className="text-4xl font-bold text-luxury-navy mb-2">3</div>
-              <p className="text-gray-600">Jahre Erfahrung</p>
+              <p className="text-gray-600">{t('franchise.stats.experience')}</p>
             </div>
           </div>
         </div>
@@ -218,10 +218,10 @@ export default function Franchise() {
           <Card className="shadow-xl">
             <CardHeader>
               <CardTitle className="text-2xl text-luxury-navy text-center">
-                Franchise Informationen Anfordern
+                {t('franchise.form.title')}
               </CardTitle>
               <p className="text-gray-600 text-center">
-                Kontaktieren Sie uns für ein persönliches Beratungsgespräch
+                {t('franchise.form.subtitle')}
               </p>
             </CardHeader>
             <CardContent>
@@ -229,10 +229,10 @@ export default function Franchise() {
                 <div className="text-center py-8">
                   <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-luxury-navy mb-2">
-                    Vielen Dank für Ihr Interesse!
+                    {t('franchise.request.success')}
                   </h3>
                   <p className="text-gray-600">
-                    Wir werden uns in Kürze bei Ihnen melden, um einen Termin für ein persönliches Gespräch zu vereinbaren.
+                    {t('franchise.request.success.description')}
                   </p>
                 </div>
               ) : (
@@ -244,9 +244,9 @@ export default function Franchise() {
                         name="name"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Name *</FormLabel>
+                            <FormLabel>{t('franchise.form.name')} *</FormLabel>
                             <FormControl>
-                              <Input placeholder="Ihr Name" {...field} />
+                              <Input placeholder={t('franchise.form.name')} {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -258,9 +258,9 @@ export default function Franchise() {
                         name="email"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>E-Mail *</FormLabel>
+                            <FormLabel>{t('franchise.form.email')} *</FormLabel>
                             <FormControl>
-                              <Input type="email" placeholder="ihre@email.com" {...field} />
+                              <Input type="email" placeholder={t('franchise.form.email')} {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -273,9 +273,9 @@ export default function Franchise() {
                       name="phone"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Telefon</FormLabel>
+                          <FormLabel>{t('franchise.form.phone')}</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="Ihre Telefonnummer" {...field} />
+                            <Input type="tel" placeholder={t('franchise.form.phone')} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -287,10 +287,10 @@ export default function Franchise() {
                       name="message"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Nachricht *</FormLabel>
+                          <FormLabel>{t('franchise.form.message')} *</FormLabel>
                           <FormControl>
                             <Textarea 
-                              placeholder="Erzählen Sie uns von Ihrem Interesse an einer Franchise..."
+                              placeholder={t('franchise.form.placeholder')}
                               rows={4}
                               {...field}
                             />
@@ -305,7 +305,7 @@ export default function Franchise() {
                       className="w-full bg-luxury-gold hover:bg-yellow-600 text-white py-3 text-lg"
                       disabled={createContactMutation.isPending}
                     >
-                      {createContactMutation.isPending ? "Wird gesendet..." : "Informationen Anfordern"}
+                      {createContactMutation.isPending ? t('contact.sending') : t('franchise.form.title')}
                     </Button>
                   </form>
                 </Form>
