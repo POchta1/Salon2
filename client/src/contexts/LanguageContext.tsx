@@ -142,7 +142,8 @@ const translations = {
     'about.title': 'Über uns',
     'about.subtitle': 'Willkommen bei Beauty Space Wien, Ihrem Anlaufpunkt für hochwertige Arbeitsplätze und professionelle Beauty-Technik.',
     'about.description1': 'Neben spezialisierten Arbeitsplätzen bieten wir Ihnen moderne Ausstattung für saubere, hygienische Arbeitsumgebungen und Kosmetikmaschinen, die modernste Technologien für Hautpflege und ästhetische Behandlungen einsetzen.',
-    'about.description2': 'Unser flexibler Arbeitsplatz ist perfekt für Beauty-Profis, die nach Erfolg streben. Mit modernen und professionell ausgestatteten Räumlichkeiten bieten wir die ideale Umgebung für erstklassige Dienstleistungen.',
+    'about.description2': 'Unser flexibler Arbeitsplatz ist perfekt für Beauty-Profis, die nach Erfolg streben. Mit modernen und professionell ausgestatteten Räumlichkeiten bieten wir die ideale Umgebung für erstklassige Dienstleistungen. Du kannst dich in einem inspirierenden Umfeld mit anderen Beauty-Experten vernetzen, Ideen austauschen und gemeinsam wachsen.',
+    'about.cta': 'Unsere Arbeitsplätze entdecken',
     
     // How It Works Section
     'how.title': 'Wie funktioniert es?',
@@ -345,8 +346,10 @@ const translations = {
     // About Us Section
     'about.title': 'About Us',
     'about.subtitle': 'Welcome to Beauty Space Wien, your destination for high-quality workspaces and professional beauty technology.',
-    'about.description1': 'In addition to specialized workspaces, we offer modern equipment for clean, hygienic work environments and cosmetic machines using the latest technologies for skincare and aesthetic treatments.',
-    'about.description2': 'Our flexible workspace is perfect for beauty professionals striving for success. With modern and professionally equipped facilities, we provide the ideal environment for first-class services.',
+    'about.description1': 'In addition to specialized workspaces, we offer you modern equipment for clean, hygienic work environments and cosmetic machines that use the latest technologies for skincare and aesthetic treatments.',
+    'about.description2': 'Our flexible workspace is perfect for beauty professionals striving for success. With modern and professionally equipped spaces, we provide the ideal environment for first-class services. You can network with other beauty experts in an inspiring environment, exchange ideas and grow together.',
+    'about.cta': 'Discover Our Workspaces',
+    
     
     // How It Works Section
     'how.title': 'How It Works',
@@ -550,7 +553,8 @@ const translations = {
     'about.title': 'Про Нас',
     'about.subtitle': 'Ласкаво просимо до Beauty Space Wien, вашого пункту призначення для високоякісних робочих місць та професійних beauty-технологій.',
     'about.description1': 'Окрім спеціалізованих робочих місць, ми пропонуємо сучасне обладнання для чистих, гігієнічних робочих середовищ та косметичні машини з новітніми технологіями для догляду за шкірою та естетичних процедур.',
-    'about.description2': 'Наше гнучке робоче місце ідеально підходить для beauty-професіоналів, які прагнуть успіху. З сучасними та професійно обладнаними приміщеннями ми надаємо ідеальне середовище для першокласних послуг.',
+    'about.description2': 'Наше гнучке робоче місце ідеально підходить для beauty-професіоналів, які прагнуть успіху. З сучасними та професійно обладнаними приміщеннями ми надаємо ідеальне середовище для першокласних послуг. Ви можете налагодити мережу з іншими beauty-експертами в надихаючому середовищі, обмінятися ідеями та зростати разом.',
+    'about.cta': 'Відкрийте Наші Робочі Місця',
     
     // How It Works Section
     'how.title': 'Як Це Працює',
