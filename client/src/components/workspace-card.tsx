@@ -5,6 +5,7 @@ import { MapPin, Clock, Euro } from "lucide-react";
 import { useState } from "react";
 import BookingModal from "./booking-modal";
 import type { Workspace } from "@shared/schema";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface WorkspaceCardProps {
   workspace: Workspace;
@@ -12,6 +13,7 @@ interface WorkspaceCardProps {
 
 export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const { t } = useLanguage();
 
   const getCategoryColor = (category: string) => {
     switch (category) {
@@ -30,6 +32,35 @@ export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
     }
   };
 
+  const translateFeature = (feature: string) => {
+    // Create mapping for German features to translation keys
+    const featureMapping: { [key: string]: string } = {
+      'Professionelle Beleuchtung': 'feature.professional.lighting',
+      'Makeup-Station': 'feature.makeup.station',
+      'Aufbewahrung': 'feature.aufbewahrung',
+      'Spiegel': 'feature.mirror',
+      'Stuhl': 'feature.chair',
+      'Kosmetikliege': 'feature.kosmetikliege',
+      'Sterilisation': 'feature.sterilisation',
+      'Schrank': 'feature.schrank',
+      'Waschbecken': 'feature.waschbecken',
+      'Beleuchtung': 'feature.beleuchtung',
+      'Friseurplatz': 'feature.friseurplatz',
+      'Föhn/Haartrockner': 'feature.foenhaartrockner',
+      'Haarwaschbecken': 'feature.haarwaschbecken',
+      'Handtücher': 'feature.handtucher',
+      'UV-Lampe': 'feature.uv.lampe',
+      'Absaugung': 'feature.absaugung',
+      'Arbeitstisch': 'feature.arbeitstisch',
+      'Fußpflegestuhl': 'feature.fusspflegestuhl',
+      'Instrumententisch': 'feature.instrumententisch',
+      'Desinfektion': 'feature.desinfektion'
+    };
+    
+    const translationKey = featureMapping[feature];
+    return translationKey ? t(translationKey) : feature;
+  };
+
   return (
     <>
       <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105">
@@ -41,7 +72,7 @@ export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
           />
           {workspace.isAvailable && (
             <Badge className="absolute top-4 right-4 bg-green-500 text-white">
-              Verfügbar
+              {t('workspace.available')}
             </Badge>
           )}
         </div>
@@ -66,12 +97,12 @@ export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
           <div className="flex flex-wrap gap-2 mb-4">
             {workspace.features.slice(0, 3).map((feature, index) => (
               <Badge key={index} variant="secondary" className="text-xs">
-                {feature}
+                {translateFeature(feature)}
               </Badge>
             ))}
             {workspace.features.length > 3 && (
               <Badge variant="secondary" className="text-xs">
-                +{workspace.features.length - 3} mehr
+                +{workspace.features.length - 3} {t('workspace.more')}
               </Badge>
             )}
           </div>
@@ -80,11 +111,11 @@ export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
             <div className="flex items-center text-luxury-gold font-bold">
               <Euro className="h-4 w-4 mr-1" />
               <span className="text-2xl">{workspace.dailyRate}</span>
-              <span className="text-sm text-gray-500 ml-1">/Tag</span>
+              <span className="text-sm text-gray-500 ml-1">{t('workspace.per.day.short')}</span>
             </div>
             <div className="flex items-center text-gray-600 text-sm">
               <Clock className="h-4 w-4 mr-1" />
-              <span>ab €{workspace.hourlyRate}/Std</span>
+              <span>{t('workspace.from')} €{workspace.hourlyRate}{t('workspace.per.hour.short')}</span>
             </div>
           </div>
           
@@ -93,7 +124,7 @@ export default function WorkspaceCard({ workspace }: WorkspaceCardProps) {
             onClick={() => setIsBookingOpen(true)}
             disabled={!workspace.isAvailable}
           >
-            {workspace.isAvailable ? "Buchen" : "Nicht verfügbar"}
+            {workspace.isAvailable ? t('workspace.book') : t('workspace.unavailable')}
           </Button>
         </CardContent>
       </Card>
