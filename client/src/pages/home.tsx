@@ -4,8 +4,11 @@ import Testimonials from "@/components/testimonials";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
+  
   return (
     <div>
       <Hero />
@@ -17,17 +20,17 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h3 className="text-4xl font-bold text-luxury-navy mb-6">
-                Über uns
+                {t('about.title')}
               </h3>
               <p className="text-gray-600 mb-6">
-                Willkommen bei Beauty Space Wien, Ihrem Anlaufpunkt für hochwertige Arbeitsplätze und professionelle Beauty-Technik. Neben spezialisierten Arbeitsplätzen bieten wir Ihnen moderne Ausstattung für saubere, hygienische Arbeitsumgebungen und Kosmetikmaschinen, die modernste Technologien für Hautpflege und ästhetische Behandlungen einsetzen.
+                {t('about.subtitle')} {t('about.description1')}
               </p>
               <p className="text-gray-600 mb-8">
-                Unser flexibler Arbeitsplatz ist perfekt für Beauty-Profis, die nach Erfolg streben. Mit modernen und professionell ausgestatteten Räumlichkeiten bieten wir die ideale Umgebung für erstklassige Dienstleistungen. Du kannst dich in einem inspirierenden Umfeld mit anderen Beauty-Experten vernetzen, Ideen austauschen und gemeinsam wachsen.
+                {t('about.description2')}
               </p>
               <Link href="/services">
                 <Button className="bg-luxury-gold hover:bg-yellow-600 text-white">
-                  Unsere Arbeitsplätze entdecken
+                  {t('about.cta')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
