@@ -90,6 +90,17 @@ const translations = {
     'testimonials.title': 'Was unsere Kunden sagen',
     'testimonials.subtitle': 'Erfahrungen von Beauty-Profis, die unsere Arbeitsplätze nutzen',
     
+    // Testimonials Content
+    'testimonial.anna.comment': 'Die Ausstattung ist einfach fantastisch! Ich kann mich voll auf meine Kunden konzentrieren, ohne mir Sorgen um die Technik machen zu müssen.',
+    'testimonial.anna.name': 'Anna Schmidt',
+    'testimonial.anna.profession': 'Makeup Artist',
+    'testimonial.maria.comment': 'Flexible Buchungen und eine tolle Gemeinschaft. Ich habe hier viele wertvolle Kontakte geknüpft!',
+    'testimonial.maria.name': 'Maria Koller',
+    'testimonial.maria.profession': 'Kosmetikerin',
+    'testimonial.stefan.comment': 'Die zentrale Lage und die professionelle Atmosphäre haben mein Business auf das nächste Level gebracht.',
+    'testimonial.stefan.name': 'Stefan Maier',
+    'testimonial.stefan.profession': 'Friseur',
+    
     // Gallery
     'gallery.title': 'Unsere Arbeitsplätze',
     'gallery.subtitle': 'Entdecken Sie unsere luxuriösen Beauty-Räume',
@@ -303,6 +314,17 @@ const translations = {
     // Testimonials
     'testimonials.title': 'What Our Customers Say',
     'testimonials.subtitle': 'Experiences from beauty professionals who use our workspaces',
+    
+    // Testimonials Content
+    'testimonial.anna.comment': 'The equipment is simply fantastic! I can focus completely on my clients without worrying about the technology.',
+    'testimonial.anna.name': 'Anna Schmidt',
+    'testimonial.anna.profession': 'Makeup Artist',
+    'testimonial.maria.comment': 'Flexible bookings and a great community. I have made many valuable contacts here!',
+    'testimonial.maria.name': 'Maria Koller',
+    'testimonial.maria.profession': 'Cosmetician',
+    'testimonial.stefan.comment': 'The central location and professional atmosphere have taken my business to the next level.',
+    'testimonial.stefan.name': 'Stefan Maier',
+    'testimonial.stefan.profession': 'Hairdresser',
     
     // Gallery
     'gallery.title': 'Our Workspaces',
@@ -518,6 +540,17 @@ const translations = {
     // Testimonials
     'testimonials.title': 'Що Кажуть Наші Клієнти',
     'testimonials.subtitle': 'Досвід beauty-професіоналів, які користуються нашими робочими місцями',
+    
+    // Testimonials Content
+    'testimonial.anna.comment': 'Обладнання просто фантастичне! Я можу повністю зосередитися на своїх клієнтах, не турбуючись про техніку.',
+    'testimonial.anna.name': 'Анна Шмідт',
+    'testimonial.anna.profession': 'Makeup Artist',
+    'testimonial.maria.comment': 'Гнучкі бронювання та чудове співтовариство. Я знайшла тут багато цінних контактів!',
+    'testimonial.maria.name': 'Марія Коллер',
+    'testimonial.maria.profession': 'Косметолог',
+    'testimonial.stefan.comment': 'Центральне розташування та професійна атмосфера підняли мій бізнес на новий рівень.',
+    'testimonial.stefan.name': 'Стефан Майер',
+    'testimonial.stefan.profession': 'Перукар',
     
     // Gallery
     'gallery.title': 'Наші Робочі Місця',

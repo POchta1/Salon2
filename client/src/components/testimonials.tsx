@@ -10,6 +10,26 @@ export default function Testimonials() {
     queryKey: ["/api/testimonials"],
   });
 
+  // Create translation mapping for testimonials
+  const getTranslatedTestimonial = (testimonial: Testimonial) => {
+    const nameMapping: { [key: string]: string } = {
+      'Anna Schmidt': 'anna',
+      'Maria Koller': 'maria',
+      'Stefan Maier': 'stefan'
+    };
+    
+    const key = nameMapping[testimonial.name];
+    if (key) {
+      return {
+        ...testimonial,
+        name: t(`testimonial.${key}.name`),
+        profession: t(`testimonial.${key}.profession`),
+        comment: t(`testimonial.${key}.comment`)
+      };
+    }
+    return testimonial;
+  };
+
   if (isLoading) {
     return (
       <section className="py-20 bg-white">
@@ -38,35 +58,38 @@ export default function Testimonials() {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials?.map((testimonial, index) => (
-            <Card 
-              key={testimonial.id} 
-              className="bg-elegant-light p-8 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="p-0">
-                <div className="flex items-center mb-4">
-                  <div className="flex text-elegant-gray text-xl">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-current" />
-                    ))}
+          {testimonials?.map((testimonial, index) => {
+            const translatedTestimonial = getTranslatedTestimonial(testimonial);
+            return (
+              <Card 
+                key={testimonial.id} 
+                className="bg-elegant-light p-8 animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardContent className="p-0">
+                  <div className="flex items-center mb-4">
+                    <div className="flex text-elegant-gray text-xl">
+                      {Array.from({ length: testimonial.rating }).map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-current" />
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <p className="text-elegant-gray mb-6 italic">
-                  "{testimonial.comment}"
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-elegant-black rounded-full flex items-center justify-center text-white font-bold">
-                    {testimonial.name.charAt(0)}
+                  <p className="text-elegant-gray mb-6 italic">
+                    "{translatedTestimonial.comment}"
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-elegant-black rounded-full flex items-center justify-center text-white font-bold">
+                      {translatedTestimonial.name.charAt(0)}
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="font-semibold text-elegant-black">{translatedTestimonial.name}</h4>
+                      <p className="text-sm text-elegant-gray">{translatedTestimonial.profession}</p>
+                    </div>
                   </div>
-                  <div className="ml-4">
-                    <h4 className="font-semibold text-elegant-black">{testimonial.name}</h4>
-                    <p className="text-sm text-elegant-gray">{testimonial.profession}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
