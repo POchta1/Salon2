@@ -46,6 +46,15 @@ const translations = {
     'booking.cancel': 'Abbrechen',
     'booking.book': 'Jetzt buchen',
     'booking.booking': 'Wird gebucht...',
+    'booking.success': 'Buchung erfolgreich!',
+    'booking.success.description': 'Ihre Buchungsanfrage wurde erfolgreich eingereicht.',
+    'booking.error': 'Buchung fehlgeschlagen',
+    'booking.error.description': 'Es gab ein Problem mit Ihrer Buchung. Bitte versuchen Sie es erneut.',
+    'booking.dateRequired': 'Datum erforderlich',
+    'booking.dateRequired.description': 'Bitte wählen Sie ein Buchungsdatum aus.',
+    'booking.selectDate': 'Datum wählen',
+    'booking.selectStartTime': 'Startzeit wählen',
+    'booking.selectEndTime': 'Endzeit wählen',
     
     // Footer
     'footer.company': 'Unternehmen',
@@ -149,11 +158,11 @@ const translations = {
     'how.title': 'Wie funktioniert es?',
     'how.subtitle': 'In nur wenigen Schritten zu Ihrem perfekten Beauty-Arbeitsplatz',
     'how.individual.title': 'Individuelle Arbeitsplätze',
-    'how.individual.description': 'Wir stellen voll ausgestattete Arbeitsplätze in unseren Beauty-Salons zur Verfügung, damit du direkt loslegen kannst.',
+    'how.individual.description': 'Wir stellen voll ausgestattete Arbeitsplätze in unseren Beauty-Salons zur Verfügung, damit du direkt loslegen kannst. Jeder Arbeitsplatz ist ergonomisch gestaltet und mit hochwertigen Geräten ausgestattet.',
     'how.support.title': 'Unterstützung und Beratung',
-    'how.support.description': 'Unser engagiertes Team steht dir zur Seite und bietet dir Unterstützung und Beratung in verschiedenen Bereichen.',
+    'how.support.description': 'Unser engagiertes Team steht dir zur Seite und bietet dir Unterstützung und Beratung in verschiedenen Bereichen, wie beispielsweise Geschäftsentwicklung, Marketing oder Kundenakquise.',
     'how.flexibility.title': 'Flexibilität',
-    'how.flexibility.description': 'Wir bieten flexible Mietoptionen an, damit du deine Arbeitszeiten anpassen und deinen Bedürfnissen gerecht werden kannst.',
+    'how.flexibility.description': 'Wir bieten flexible Mietoptionen an, damit du deine Arbeitszeiten anpassen und deinen Bedürfnissen gerecht werden kannst. Du kannst die Räumlichkeiten stunden- oder tageweise, aber auch langfristig mieten.',
     
     // Target Audience Section
     'target.title': 'Für wen ist ein Beauty Space geeignet?',
@@ -251,6 +260,15 @@ const translations = {
     'booking.cancel': 'Cancel',
     'booking.book': 'Book Now',
     'booking.booking': 'Booking...',
+    'booking.success': 'Booking Successful!',
+    'booking.success.description': 'Your booking request has been successfully submitted.',
+    'booking.error': 'Booking Failed',
+    'booking.error.description': 'There was a problem with your booking. Please try again.',
+    'booking.dateRequired': 'Date Required',
+    'booking.dateRequired.description': 'Please select a booking date.',
+    'booking.selectDate': 'Select Date',
+    'booking.selectStartTime': 'Select Start Time',
+    'booking.selectEndTime': 'Select End Time',
     
     // Footer
     'footer.company': 'Company',
@@ -355,11 +373,11 @@ const translations = {
     'how.title': 'How It Works',
     'how.subtitle': 'In just a few steps to your perfect beauty workspace',
     'how.individual.title': 'Individual Workspaces',
-    'how.individual.description': 'We provide fully equipped workspaces in our beauty salons so you can get started right away.',
+    'how.individual.description': 'We provide fully equipped workspaces in our beauty salons so you can get started right away. Each workspace is ergonomically designed and equipped with high-quality devices.',
     'how.support.title': 'Support and Consultation',
-    'how.support.description': 'Our dedicated team is by your side and offers support and consultation in various areas.',
+    'how.support.description': 'Our dedicated team is by your side and offers support and consultation in various areas, such as business development, marketing or customer acquisition.',
     'how.flexibility.title': 'Flexibility',
-    'how.flexibility.description': 'We offer flexible rental options so you can adjust your working hours and meet your needs.',
+    'how.flexibility.description': 'We offer flexible rental options so you can adjust your working hours and meet your needs. You can rent the spaces hourly or daily, but also for longer periods.',
     
     // Target Audience Section
     'target.title': 'Who is a Beauty Space suitable for?',
@@ -457,6 +475,15 @@ const translations = {
     'booking.cancel': 'Скасувати',
     'booking.book': 'Забронювати зараз',
     'booking.booking': 'Бронюється...',
+    'booking.success': 'Бронювання успішне!',
+    'booking.success.description': 'Ваш запит на бронювання було успішно надіслано.',
+    'booking.error': 'Помилка бронювання',
+    'booking.error.description': 'Виникла проблема з вашим бронюванням. Будь ласка, спробуйте знову.',
+    'booking.dateRequired': 'Потрібна дата',
+    'booking.dateRequired.description': 'Будь ласка, виберіть дату бронювання.',
+    'booking.selectDate': 'Оберіть дату',
+    'booking.selectStartTime': 'Оберіть час початку',
+    'booking.selectEndTime': 'Оберіть час закінчення',
     
     // Footer
     'footer.company': 'Компанія',
@@ -560,11 +587,11 @@ const translations = {
     'how.title': 'Як Це Працює',
     'how.subtitle': 'Лише кілька кроків до вашого ідеального beauty-робочого місця',
     'how.individual.title': 'Індивідуальні Робочі Місця',
-    'how.individual.description': 'Ми надаємо повністю обладнані робочі місця в наших beauty-салонах, щоб ви могли почати відразу.',
+    'how.individual.description': 'Ми надаємо повністю обладнані робочі місця в наших beauty-салонах, щоб ви могли почати відразу. Кожне робоче місце ергономічно спроектоване та оснащене високоякісним обладнанням.',
     'how.support.title': 'Підтримка та Консультації',
-    'how.support.description': 'Наша відданіа команда поруч з вами і пропонує підтримку та консультації в різних сферах.',
+    'how.support.description': 'Наша відданіа команда поруч з вами і пропонує підтримку та консультації в різних сферах, таких як розвиток бізнесу, маркетинг або залучення клієнтів.',
     'how.flexibility.title': 'Гнучкість',
-    'how.flexibility.description': 'Ми пропонуємо гнучкі варіанти оренди, щоб ви могли налаштувати свій робочий час відповідно до своїх потреб.',
+    'how.flexibility.description': 'Ми пропонуємо гнучкі варіанти оренди, щоб ви могли налаштувати свій робочий час відповідно до своїх потреб. Ви можете орендувати приміщення погодинно або подобово, а також на тривалий термін.',
     
     // Target Audience Section
     'target.title': 'Для кого підходить Beauty Space?',

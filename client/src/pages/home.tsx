@@ -52,10 +52,10 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-luxury-navy mb-4">
-              Wie funktioniert es?
+              {t('how.title')}
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              In nur wenigen Schritten zu Ihrem perfekten Beauty-Arbeitsplatz
+              {t('how.subtitle')}
             </p>
           </div>
           
@@ -64,9 +64,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 1
               </div>
-              <h4 className="text-xl font-semibold text-luxury-navy mb-3">Individuelle Arbeitsplätze</h4>
+              <h4 className="text-xl font-semibold text-luxury-navy mb-3">{t('how.individual.title')}</h4>
               <p className="text-gray-600">
-                Wir stellen voll ausgestattete Arbeitsplätze in unseren Beauty-Salons zur Verfügung, damit du direkt loslegen kannst. Jeder Arbeitsplatz ist ergonomisch gestaltet und mit hochwertigen Geräten ausgestattet.
+                {t('how.individual.description')}
               </p>
             </div>
             
@@ -74,9 +74,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 2
               </div>
-              <h4 className="text-xl font-semibold text-luxury-navy mb-3">Unterstützung und Beratung</h4>
+              <h4 className="text-xl font-semibold text-luxury-navy mb-3">{t('how.support.title')}</h4>
               <p className="text-gray-600">
-                Unser engagiertes Team steht dir zur Seite und bietet dir Unterstützung und Beratung in verschiedenen Bereichen, wie beispielsweise Geschäftsentwicklung, Marketing oder Kundenakquise.
+                {t('how.support.description')}
               </p>
             </div>
             
@@ -84,9 +84,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 3
               </div>
-              <h4 className="text-xl font-semibold text-luxury-navy mb-3">Flexibilität</h4>
+              <h4 className="text-xl font-semibold text-luxury-navy mb-3">{t('how.flexibility.title')}</h4>
               <p className="text-gray-600">
-                Wir bieten flexible Mietoptionen an, damit du deine Arbeitszeiten anpassen und deinen Bedürfnissen gerecht werden kannst. Du kannst die Räumlichkeiten stunden- oder tageweise, aber auch langfristig mieten.
+                {t('how.flexibility.description')}
               </p>
             </div>
           </div>
@@ -98,25 +98,25 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-luxury-navy mb-4">
-              Für wen ist ein Beauty Space geeignet?
+              {t('target.title')}
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Unsere Arbeitsplätze sind perfekt für verschiedene Beauty-Profis
+              {t('target.subtitle')}
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[
-              "Friseure", "Kosmetiker", "Make-up-Artists", "Nageltechniker",
-              "Hautpflegetechniker", "Visagisten", "Hairstylisten", "Beautytherapeuten",
-              "Wimpernstylisten", "Massage-Therapeuten", "Haarfärbespezialisten", "Schönheitsberater"
-            ].map((profession, index) => (
+              'target.hairdresser', 'target.cosmetician', 'target.makeup', 'target.nail',
+              'target.skincare', 'target.visagist', 'target.stylist', 'target.therapist',
+              'target.lash', 'target.massage', 'target.colorist', 'target.consultant'
+            ].map((professionKey, index) => (
               <div 
                 key={index}
                 className="bg-luxury-gray p-6 rounded-lg text-center hover:shadow-lg transition-shadow duration-300 animate-scale-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <h4 className="font-semibold text-luxury-navy">{profession}</h4>
+                <h4 className="font-semibold text-luxury-navy">{t(professionKey)}</h4>
               </div>
             ))}
           </div>
