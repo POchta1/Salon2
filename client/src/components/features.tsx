@@ -17,8 +17,8 @@ export default function Features() {
     },
     {
       icon: Users,
-      title: "Inspiring Environment",
-      description: "Connect with other beauty professionals and expand your network"
+      title: t('features.inspiring.title'),
+      description: t('features.inspiring.description')
     },
     {
       icon: MapPin,
@@ -32,8 +32,8 @@ export default function Features() {
     },
     {
       icon: Shield,
-      title: "Hygiene & Safety",
-      description: "Highest hygiene standards and professional cleaning systems for your safety"
+      title: t('features.hygiene.title'),
+      description: t('features.hygiene.description')
     }
   ];
 
