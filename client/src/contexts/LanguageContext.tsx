@@ -63,7 +63,45 @@ const translations = {
     'language.select': 'Sprache wählen',
     'language.german': 'Deutsch',
     'language.english': 'English',
-    'language.ukrainian': 'Українська'
+    'language.ukrainian': 'Українська',
+    
+    // Features Section
+    'features.title': 'Warum Beauty Space Wien wählen?',
+    'features.subtitle': 'Entdecken Sie die Vorteile unserer exklusiven Beauty-Arbeitsplätze',
+    'features.flexible.title': 'Flexible Buchung',
+    'features.flexible.description': 'Buchen Sie stundenweise oder tageweise nach Ihren Bedürfnissen',
+    'features.premium.title': 'Premium Ausstattung',
+    'features.premium.description': 'Professionelle Beleuchtung, Spiegel und hochwertige Möbel',
+    'features.central.title': 'Zentrale Lage',
+    'features.central.description': 'Mitten in Wien, perfekt erreichbar für Ihre Kunden',
+    'features.support.title': '24/7 Support',
+    'features.support.description': 'Unser Team steht Ihnen jederzeit zur Verfügung',
+    
+    // Testimonials
+    'testimonials.title': 'Was unsere Kunden sagen',
+    'testimonials.subtitle': 'Erfahrungen von Beauty-Profis, die unsere Arbeitsplätze nutzen',
+    
+    // Gallery
+    'gallery.title': 'Unsere Arbeitsplätze',
+    'gallery.subtitle': 'Entdecken Sie unsere luxuriösen Beauty-Räume',
+    
+    // Contact
+    'contact.title': 'Kontakt',
+    'contact.subtitle': 'Haben Sie Fragen? Wir helfen Ihnen gerne weiter',
+    'contact.name': 'Vollständiger Name',
+    'contact.email': 'E-Mail-Adresse',
+    'contact.message': 'Nachricht',
+    'contact.send': 'Nachricht senden',
+    'contact.sending': 'Wird gesendet...',
+    
+    // Workspace Categories
+    'workspace.makeup': 'Makeup Studio',
+    'workspace.kosmetik': 'Kosmetikbehandlung',
+    'workspace.friseur': 'Friseur Salon',
+    'workspace.nageldesign': 'Nageldesign Studio',
+    'workspace.fusspflege': 'Fußpflege Behandlung',
+    'workspace.per.hour': 'pro Stunde',
+    'workspace.per.day': 'pro Tag'
   },
   en: {
     // Navigation
@@ -117,7 +155,45 @@ const translations = {
     'language.select': 'Select Language',
     'language.german': 'Deutsch',
     'language.english': 'English',
-    'language.ukrainian': 'Українська'
+    'language.ukrainian': 'Українська',
+    
+    // Features Section
+    'features.title': 'Why Choose Beauty Space Wien?',
+    'features.subtitle': 'Discover the benefits of our exclusive beauty workspaces',
+    'features.flexible.title': 'Flexible Booking',
+    'features.flexible.description': 'Book by hour or day according to your needs',
+    'features.premium.title': 'Premium Equipment',
+    'features.premium.description': 'Professional lighting, mirrors and high-quality furniture',
+    'features.central.title': 'Central Location',
+    'features.central.description': 'In the heart of Vienna, perfectly accessible for your clients',
+    'features.support.title': '24/7 Support',
+    'features.support.description': 'Our team is available to assist you anytime',
+    
+    // Testimonials
+    'testimonials.title': 'What Our Customers Say',
+    'testimonials.subtitle': 'Experiences from beauty professionals who use our workspaces',
+    
+    // Gallery
+    'gallery.title': 'Our Workspaces',
+    'gallery.subtitle': 'Discover our luxurious beauty rooms',
+    
+    // Contact
+    'contact.title': 'Contact',
+    'contact.subtitle': 'Have questions? We are happy to help',
+    'contact.name': 'Full Name',
+    'contact.email': 'Email Address',
+    'contact.message': 'Message',
+    'contact.send': 'Send Message',
+    'contact.sending': 'Sending...',
+    
+    // Workspace Categories
+    'workspace.makeup': 'Makeup Studio',
+    'workspace.kosmetik': 'Cosmetic Treatment',
+    'workspace.friseur': 'Hair Salon',
+    'workspace.nageldesign': 'Nail Design Studio',
+    'workspace.fusspflege': 'Foot Care Treatment',
+    'workspace.per.hour': 'per hour',
+    'workspace.per.day': 'per day'
   },
   uk: {
     // Navigation
@@ -171,7 +247,45 @@ const translations = {
     'language.select': 'Оберіть мову',
     'language.german': 'Deutsch',
     'language.english': 'English',
-    'language.ukrainian': 'Українська'
+    'language.ukrainian': 'Українська',
+    
+    // Features Section
+    'features.title': 'Чому варто обрати Beauty Space Wien?',
+    'features.subtitle': 'Відкрийте переваги наших ексклюзивних beauty-робочих місць',
+    'features.flexible.title': 'Гнучке Бронювання',
+    'features.flexible.description': 'Бронюйте погодинно або подобово відповідно до ваших потреб',
+    'features.premium.title': 'Преміум Обладнання',
+    'features.premium.description': 'Професійне освітлення, дзеркала та високоякісні меблі',
+    'features.central.title': 'Центральне Розташування',
+    'features.central.description': 'В самому центрі Відня, ідеально доступно для ваших клієнтів',
+    'features.support.title': 'Підтримка 24/7',
+    'features.support.description': 'Наша команда завжди готова вам допомогти',
+    
+    // Testimonials
+    'testimonials.title': 'Що Кажуть Наші Клієнти',
+    'testimonials.subtitle': 'Досвід beauty-професіоналів, які користуються нашими робочими місцями',
+    
+    // Gallery
+    'gallery.title': 'Наші Робочі Місця',
+    'gallery.subtitle': 'Відкрийте наші розкішні beauty-кімнати',
+    
+    // Contact
+    'contact.title': 'Контакти',
+    'contact.subtitle': 'Маєте питання? Ми з радістю допоможемо',
+    'contact.name': 'Повне імʼя',
+    'contact.email': 'Електронна пошта',
+    'contact.message': 'Повідомлення',
+    'contact.send': 'Надіслати повідомлення',
+    'contact.sending': 'Надсилається...',
+    
+    // Workspace Categories
+    'workspace.makeup': 'Makeup Студія',
+    'workspace.kosmetik': 'Косметичні Процедури',
+    'workspace.friseur': 'Перукарський Салон',
+    'workspace.nageldesign': 'Студія Нейл-Дизайну',
+    'workspace.fusspflege': 'Процедури Педикюру',
+    'workspace.per.hour': 'за годину',
+    'workspace.per.day': 'за день'
   }
 };
 

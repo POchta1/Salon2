@@ -18,6 +18,7 @@ import { de } from "date-fns/locale";
 import { insertBookingSchema } from "@shared/schema";
 import { z } from "zod";
 import type { Workspace } from "@shared/schema";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface BookingModalProps {
   workspace: Workspace;
@@ -32,6 +33,7 @@ const bookingFormSchema = insertBookingSchema.extend({
 type BookingFormData = z.infer<typeof bookingFormSchema>;
 
 export default function BookingModal({ workspace, isOpen, onClose }: BookingModalProps) {
+  const { t } = useLanguage();
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [calculatedTotal, setCalculatedTotal] = useState<number>(0);
   const { toast } = useToast();
@@ -125,10 +127,10 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
       <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-elegant-black">
-            {workspace.name} buchen
+            {workspace.name} {t('booking.title')}
           </DialogTitle>
           <DialogDescription className="text-elegant-gray">
-            Buchen Sie diesen Arbeitsplatz für Ihre Beauty-Services
+            {t('booking.description')}
           </DialogDescription>
         </DialogHeader>
         
@@ -152,9 +154,9 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                   name="customerName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name *</FormLabel>
+                      <FormLabel>{t('booking.customerName')} *</FormLabel>
                       <FormControl>
-                        <Input placeholder="Ihr Name" {...field} />
+                        <Input placeholder={t('booking.customerName')} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

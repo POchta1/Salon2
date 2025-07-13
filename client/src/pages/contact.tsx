@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import { insertContactSchema } from "@shared/schema";
 import { z } from "zod";
 import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const contactFormSchema = insertContactSchema.extend({
   type: z.literal("general"),
@@ -44,6 +45,7 @@ const locations = [
 ];
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
