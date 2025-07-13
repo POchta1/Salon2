@@ -35,7 +35,7 @@ export default function Hero() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 text-lg px-8 py-4 shadow-lg"
+              className="border-2 border-white text-white bg-black/40 hover:bg-white hover:text-black transition-all duration-300 text-lg px-8 py-4 shadow-lg backdrop-blur-sm"
             >
               Franchise Informationen
             </Button>
