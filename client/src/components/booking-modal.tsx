@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -124,19 +124,22 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-luxury-navy">
+          <DialogTitle className="text-2xl font-bold text-elegant-black">
             {workspace.name} buchen
           </DialogTitle>
+          <DialogDescription className="text-elegant-gray">
+            Buchen Sie diesen Arbeitsplatz für Ihre Beauty-Services
+          </DialogDescription>
         </DialogHeader>
         
         <div className="space-y-6">
           {/* Workspace Info */}
-          <div className="bg-luxury-gray p-4 rounded-lg">
-            <h4 className="font-semibold text-luxury-navy mb-2">{workspace.name}</h4>
-            <p className="text-sm text-gray-600 mb-2">{workspace.location}</p>
+          <div className="bg-elegant-light p-4 rounded-lg border border-elegant-gray/20">
+            <h4 className="font-semibold text-elegant-black mb-2">{workspace.name}</h4>
+            <p className="text-sm text-elegant-gray mb-2">{workspace.location}</p>
             <div className="flex items-center space-x-4">
-              <span className="text-luxury-gold font-bold">€{workspace.hourlyRate}/Std</span>
-              <span className="text-luxury-gold font-bold">€{workspace.dailyRate}/Tag</span>
+              <span className="text-elegant-black font-bold">€{workspace.hourlyRate}/Std</span>
+              <span className="text-elegant-black font-bold">€{workspace.dailyRate}/Tag</span>
             </div>
           </div>
 
@@ -283,10 +286,10 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
 
               {/* Price Calculation */}
               {calculatedTotal > 0 && (
-                <div className="bg-luxury-gray p-4 rounded-lg">
+                <div className="bg-elegant-light p-4 rounded-lg border border-elegant-gray/20">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold">Gesamtbetrag:</span>
-                    <div className="flex items-center text-luxury-gold font-bold text-xl">
+                    <span className="font-semibold text-elegant-black">Gesamtbetrag:</span>
+                    <div className="flex items-center text-elegant-black font-bold text-xl">
                       <Euro className="h-5 w-5 mr-1" />
                       {calculatedTotal.toFixed(2)}
                     </div>
@@ -306,7 +309,7 @@ export default function BookingModal({ workspace, isOpen, onClose }: BookingModa
                 </Button>
                 <Button
                   type="submit"
-                  className="flex-1 bg-luxury-gold hover:bg-yellow-600"
+                  className="flex-1 bg-elegant-black hover:bg-elegant-gray text-white"
                   disabled={createBookingMutation.isPending}
                 >
                   {createBookingMutation.isPending ? "Wird gebucht..." : "Jetzt buchen"}
