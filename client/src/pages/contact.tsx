@@ -183,7 +183,7 @@ export default function Contact() {
 
                       <Button 
                         type="submit"
-                        className="w-full bg-luxury-gold hover:bg-yellow-600 text-white py-3"
+                        className="w-full bg-elegant-black hover:bg-elegant-gray text-white py-3 font-semibold transition-colors duration-200"
                         disabled={createContactMutation.isPending}
                       >
                         {createContactMutation.isPending ? t('contact.sending') : t('contact.form.submit')}
