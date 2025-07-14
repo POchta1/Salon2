@@ -68,15 +68,15 @@ export default function Contact() {
     onSuccess: () => {
       setIsSubmitted(true);
       toast({
-        title: "Nachricht erfolgreich gesendet!",
-        description: "Wir werden uns bald bei Ihnen melden.",
+        title: t('contact.success'),
+        description: t('contact.success.description'),
       });
       form.reset();
     },
     onError: () => {
       toast({
-        title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es später erneut.",
+        title: t('contact.error'),
+        description: t('contact.error.description'),
         variant: "destructive",
       });
     }
@@ -91,10 +91,10 @@ export default function Contact() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl font-bold text-luxury-navy mb-4">
-            Kontakt & Standorte
+            {t('contact.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Besuchen Sie uns in einem unserer Standorte oder kontaktieren Sie uns für weitere Informationen
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function Contact() {
             <Card className="bg-white shadow-lg animate-slide-up">
               <CardHeader>
                 <CardTitle className="text-2xl text-luxury-navy">
-                  Kontaktieren Sie uns
+                  {t('contact.form.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -112,10 +112,10 @@ export default function Contact() {
                   <div className="text-center py-8">
                     <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-luxury-navy mb-2">
-                      Vielen Dank für Ihre Nachricht!
+                      {t('contact.success')}
                     </h3>
                     <p className="text-gray-600">
-                      Wir werden uns in Kürze bei Ihnen melden.
+                      {t('contact.success.description')}
                     </p>
                   </div>
                 ) : (
@@ -126,9 +126,9 @@ export default function Contact() {
                         name="name"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Name *</FormLabel>
+                            <FormLabel>{t('contact.form.name')} *</FormLabel>
                             <FormControl>
-                              <Input placeholder="Ihr Name" {...field} />
+                              <Input placeholder={t('contact.form.name')} {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -140,9 +140,9 @@ export default function Contact() {
                         name="email"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>E-Mail *</FormLabel>
+                            <FormLabel>{t('contact.form.email')} *</FormLabel>
                             <FormControl>
-                              <Input type="email" placeholder="ihre@email.com" {...field} />
+                              <Input type="email" placeholder={t('contact.form.email')} {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -154,9 +154,9 @@ export default function Contact() {
                         name="phone"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Telefon</FormLabel>
+                            <FormLabel>{t('contact.form.phone')}</FormLabel>
                             <FormControl>
-                              <Input type="tel" placeholder="Ihre Telefonnummer" {...field} />
+                              <Input type="tel" placeholder={t('contact.form.phone')} {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -168,10 +168,10 @@ export default function Contact() {
                         name="message"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Nachricht *</FormLabel>
+                            <FormLabel>{t('contact.form.message')} *</FormLabel>
                             <FormControl>
                               <Textarea 
-                                placeholder="Ihre Nachricht..."
+                                placeholder={t('contact.form.message.placeholder')}
                                 rows={4}
                                 {...field}
                               />
@@ -186,7 +186,7 @@ export default function Contact() {
                         className="w-full bg-luxury-gold hover:bg-yellow-600 text-white py-3"
                         disabled={createContactMutation.isPending}
                       >
-                        {createContactMutation.isPending ? "Wird gesendet..." : "Nachricht Senden"}
+                        {createContactMutation.isPending ? t('contact.sending') : t('contact.form.submit')}
                       </Button>
                     </form>
                   </Form>
@@ -224,12 +224,12 @@ export default function Contact() {
                 <CardContent className="p-6">
                   <h4 className="text-lg font-semibold text-luxury-navy mb-4 flex items-center">
                     <Clock className="text-luxury-gold mr-2 h-5 w-5" />
-                    Öffnungszeiten
+                    {t('contact.hours.title')}
                   </h4>
                   <div className="space-y-2">
-                    <p className="text-gray-600">Montag - Freitag: 8:00 - 20:00</p>
-                    <p className="text-gray-600">Samstag: 9:00 - 18:00</p>
-                    <p className="text-gray-600">Sonntag: Geschlossen</p>
+                    <p className="text-gray-600">{t('contact.hours.weekdays')}</p>
+                    <p className="text-gray-600">{t('contact.hours.saturday')}</p>
+                    <p className="text-gray-600">{t('contact.hours.sunday')}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -240,18 +240,18 @@ export default function Contact() {
         {/* FAQ Section */}
         <div className="mt-20">
           <h2 className="text-3xl font-bold text-luxury-navy text-center mb-12">
-            Häufig gestellte Fragen
+            {t('contact.faq.title')}
           </h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle className="text-lg text-luxury-navy">
-                  Wie kann ich einen Arbeitsplatz buchen?
+                  {t('contact.faq.booking.question')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Sie können einen Arbeitsplatz direkt über unsere Website buchen oder uns telefonisch kontaktieren. Wir bieten flexible Buchungsoptionen von Stunden bis zu Monatsmieten.
+                  {t('contact.faq.booking.answer')}
                 </p>
               </CardContent>
             </Card>
@@ -259,12 +259,12 @@ export default function Contact() {
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle className="text-lg text-luxury-navy">
-                  Was ist in der Miete enthalten?
+                  {t('contact.faq.included.question')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Die Miete umfasst die Nutzung des vollständig ausgestatteten Arbeitsplatzes, Reinigung, Strom, Wasser und grundlegende Verbrauchsmaterialien. Spezielle Produkte können separat erworben werden.
+                  {t('contact.faq.included.answer')}
                 </p>
               </CardContent>
             </Card>
@@ -272,12 +272,12 @@ export default function Contact() {
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle className="text-lg text-luxury-navy">
-                  Kann ich auch kurzfristig buchen?
+                  {t('contact.faq.shortterm.question')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Ja, kurzfristige Buchungen sind möglich, sofern der gewünschte Arbeitsplatz verfügbar ist. Wir empfehlen jedoch eine Voranmeldung, um sicherzustellen, dass Ihr Wunschtermin verfügbar ist.
+                  {t('contact.faq.shortterm.answer')}
                 </p>
               </CardContent>
             </Card>
@@ -285,12 +285,12 @@ export default function Contact() {
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle className="text-lg text-luxury-navy">
-                  Bieten Sie auch Schulungen an?
+                  {t('contact.faq.training.question')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Ja, wir bieten regelmäßig Schulungen und Workshops für Beauty-Profis an. Diese umfassen neue Techniken, Produktschulungen und Geschäftsentwicklung.
+                  {t('contact.faq.training.answer')}
                 </p>
               </CardContent>
             </Card>
