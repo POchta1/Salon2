@@ -105,14 +105,7 @@ const translations = {
     'gallery.title': 'Unsere Arbeitsplätze',
     'gallery.subtitle': 'Entdecken Sie unsere luxuriösen Beauty-Räume',
     
-    // Contact
-    'contact.title': 'Kontakt',
-    'contact.subtitle': 'Haben Sie Fragen? Wir helfen Ihnen gerne weiter',
-    'contact.name': 'Vollständiger Name',
-    'contact.email': 'E-Mail-Adresse',
-    'contact.message': 'Nachricht',
-    'contact.send': 'Nachricht senden',
-    'contact.sending': 'Wird gesendet...',
+
     
     // Workspace Categories
     'workspace.makeup': 'Makeup Studio',
@@ -264,9 +257,33 @@ const translations = {
     'franchise.form.placeholder': 'Erzählen Sie uns von Ihrem Interesse an einer Franchise...',
     
     // Contact & Locations
-    'contact.locations.title': 'Kontakt & Standorte',
-    'contact.locations.subtitle': 'Besuchen Sie uns in einem unserer Standorte oder kontaktieren Sie uns für weitere Informationen',
-    'contact.form.title': 'Kontaktieren Sie uns'
+    'contact.title': 'Kontakt & Standorte',
+    'contact.subtitle': 'Besuchen Sie uns in einem unserer Standorte oder kontaktieren Sie uns für weitere Informationen',
+    'contact.form.title': 'Kontaktieren Sie uns',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'E-Mail',
+    'contact.form.phone': 'Telefon',
+    'contact.form.message': 'Nachricht',
+    'contact.form.message.placeholder': 'Ihre Nachricht...',
+    'contact.form.submit': 'Nachricht Senden',
+    'contact.sending': 'Wird gesendet...',
+    'contact.success': 'Vielen Dank für Ihre Nachricht!',
+    'contact.success.description': 'Wir werden uns in Kürze bei Ihnen melden.',
+    'contact.error': 'Fehler beim Senden',
+    'contact.error.description': 'Bitte versuchen Sie es später erneut.',
+    'contact.hours.title': 'Öffnungszeiten',
+    'contact.hours.weekdays': 'Montag - Freitag: 8:00 - 20:00',
+    'contact.hours.saturday': 'Samstag: 9:00 - 18:00',
+    'contact.hours.sunday': 'Sonntag: Geschlossen',
+    'contact.faq.title': 'Häufig gestellte Fragen',
+    'contact.faq.booking.question': 'Wie kann ich einen Arbeitsplatz buchen?',
+    'contact.faq.booking.answer': 'Sie können einen Arbeitsplatz direkt über unsere Website buchen oder uns telefonisch kontaktieren. Wir bieten flexible Buchungsoptionen von Stunden bis zu Monatsmieten.',
+    'contact.faq.included.question': 'Was ist in der Miete enthalten?',
+    'contact.faq.included.answer': 'Die Miete umfasst die Nutzung des vollständig ausgestatteten Arbeitsplatzes, Reinigung, Strom, Wasser und grundlegende Verbrauchsmaterialien. Spezielle Produkte können separat erworben werden.',
+    'contact.faq.shortterm.question': 'Kann ich auch kurzfristig buchen?',
+    'contact.faq.shortterm.answer': 'Ja, kurzfristige Buchungen sind möglich, sofern der gewünschte Arbeitsplatz verfügbar ist. Wir empfehlen jedoch eine Voranmeldung, um sicherzustellen, dass Ihr Wunschtermin verfügbar ist.',
+    'contact.faq.training.question': 'Bieten Sie auch Schulungen an?',
+    'contact.faq.training.answer': 'Ja, wir bieten regelmäßig Schulungen und Workshops für Beauty-Profis an. Diese umfassen neue Techniken, Produktschulungen und Geschäftsentwicklung.'
   },
   en: {
     // Navigation
@@ -362,14 +379,7 @@ const translations = {
     'gallery.title': 'Our Workspaces',
     'gallery.subtitle': 'Discover our luxurious beauty rooms',
     
-    // Contact
-    'contact.title': 'Contact',
-    'contact.subtitle': 'Have questions? We are happy to help',
-    'contact.name': 'Full Name',
-    'contact.email': 'Email Address',
-    'contact.message': 'Message',
-    'contact.send': 'Send Message',
-    'contact.sending': 'Sending...',
+
     
     // Workspace Categories
     'workspace.makeup': 'Makeup Studio',
@@ -522,9 +532,33 @@ const translations = {
     'franchise.form.placeholder': 'Tell us about your interest in a franchise...',
     
     // Contact & Locations
-    'contact.locations.title': 'Contact & Locations',
-    'contact.locations.subtitle': 'Visit us at one of our locations or contact us for more information',
-    'contact.form.title': 'Contact Us'
+    'contact.title': 'Contact & Locations',
+    'contact.subtitle': 'Visit us at one of our locations or contact us for more information',
+    'contact.form.title': 'Contact Us',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.phone': 'Phone',
+    'contact.form.message': 'Message',
+    'contact.form.message.placeholder': 'Your message...',
+    'contact.form.submit': 'Send Message',
+    'contact.sending': 'Sending...',
+    'contact.success': 'Thank you for your message!',
+    'contact.success.description': 'We will contact you shortly.',
+    'contact.error': 'Error sending message',
+    'contact.error.description': 'Please try again later.',
+    'contact.hours.title': 'Opening Hours',
+    'contact.hours.weekdays': 'Monday - Friday: 8:00 - 20:00',
+    'contact.hours.saturday': 'Saturday: 9:00 - 18:00',
+    'contact.hours.sunday': 'Sunday: Closed',
+    'contact.faq.title': 'Frequently Asked Questions',
+    'contact.faq.booking.question': 'How can I book a workspace?',
+    'contact.faq.booking.answer': 'You can book a workspace directly through our website or contact us by phone. We offer flexible booking options from hours to monthly rentals.',
+    'contact.faq.included.question': 'What is included in the rental?',
+    'contact.faq.included.answer': 'The rental includes the use of the fully equipped workspace, cleaning, electricity, water and basic consumables. Special products can be purchased separately.',
+    'contact.faq.shortterm.question': 'Can I also book short-term?',
+    'contact.faq.shortterm.answer': 'Yes, short-term bookings are possible if the desired workspace is available. However, we recommend advance booking to ensure your preferred time is available.',
+    'contact.faq.training.question': 'Do you also offer training?',
+    'contact.faq.training.answer': 'Yes, we regularly offer training and workshops for beauty professionals. These include new techniques, product training and business development.'
   },
   uk: {
     // Navigation
@@ -620,14 +654,7 @@ const translations = {
     'gallery.title': 'Наші Робочі Місця',
     'gallery.subtitle': 'Відкрийте наші розкішні beauty-кімнати',
     
-    // Contact
-    'contact.title': 'Контакти',
-    'contact.subtitle': 'Маєте питання? Ми з радістю допоможемо',
-    'contact.name': 'Повне імʼя',
-    'contact.email': 'Електронна пошта',
-    'contact.message': 'Повідомлення',
-    'contact.send': 'Надіслати повідомлення',
-    'contact.sending': 'Надсилається...',
+
     
     // Workspace Categories
     'workspace.makeup': 'Makeup Студія',
@@ -779,9 +806,33 @@ const translations = {
     'franchise.form.placeholder': 'Розкажіть нам про ваш інтерес до франшизи...',
     
     // Contact & Locations
-    'contact.locations.title': 'Контакти та Локації',
-    'contact.locations.subtitle': 'Відвідайте нас в одній з наших локацій або звʼяжіться з нами для додаткової інформації',
-    'contact.form.title': 'Звʼяжіться з Нами'
+    'contact.title': 'Контакти та Локації',
+    'contact.subtitle': 'Відвідайте нас в одній з наших локацій або звʼяжіться з нами для додаткової інформації',
+    'contact.form.title': 'Звʼяжіться з Нами',
+    'contact.form.name': 'Імʼя',
+    'contact.form.email': 'Електронна Пошта',
+    'contact.form.phone': 'Телефон',
+    'contact.form.message': 'Повідомлення',
+    'contact.form.message.placeholder': 'Ваше повідомлення...',
+    'contact.form.submit': 'Надіслати Повідомлення',
+    'contact.sending': 'Надсилається...',
+    'contact.success': 'Дякуємо за ваше повідомлення!',
+    'contact.success.description': 'Ми звʼяжемося з вами найближчим часом.',
+    'contact.error': 'Помилка при надсиланні',
+    'contact.error.description': 'Будь ласка, спробуйте пізніше.',
+    'contact.hours.title': 'Години Роботи',
+    'contact.hours.weekdays': 'Понеділок - Пʼятниця: 8:00 - 20:00',
+    'contact.hours.saturday': 'Субота: 9:00 - 18:00',
+    'contact.hours.sunday': 'Неділя: Зачинено',
+    'contact.faq.title': 'Часті Питання',
+    'contact.faq.booking.question': 'Як я можу забронювати робоче місце?',
+    'contact.faq.booking.answer': 'Ви можете забронювати робоче місце безпосередньо через наш сайт або звʼязатися з нами по телефону. Ми пропонуємо гнучкі варіанти бронювання від годин до місячної оренди.',
+    'contact.faq.included.question': 'Що включено в оренду?',
+    'contact.faq.included.answer': 'Оренда включає використання повністю обладнаного робочого місця, прибирання, електрику, воду та основні витратні матеріали. Спеціальні продукти можна придбати окремо.',
+    'contact.faq.shortterm.question': 'Чи можу я бронювати короткостроково?',
+    'contact.faq.shortterm.answer': 'Так, короткострокові бронювання можливі, якщо бажане робоче місце доступне. Однак ми рекомендуємо попереднє бронювання, щоб забезпечити доступність вашого бажаного часу.',
+    'contact.faq.training.question': 'Чи пропонуєте ви також навчання?',
+    'contact.faq.training.answer': 'Так, ми регулярно пропонуємо навчання та майстер-класи для beauty-професіоналів. Вони включають нові техніки, навчання продуктам та розвиток бізнесу.'
   }
 };
 
